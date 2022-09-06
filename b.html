@@ -1,0 +1,2429 @@
+
+<!doctype html >
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
+<head>
+    <title>YAML là gì? | TopDev</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="https://topdev.vn/blog/xmlrpc.php" />
+    <link rel="icon" type="image/png" href="https://topdev.vn/blog/wp-content/uploads/2017/01/favicon.png">
+	<!-- This site is optimized with the Yoast SEO plugin v14.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="YAML là 1 định dạng dũ liệu trung gian được thiết kế để người dùng và các ngôn ngữ lập trình cùng hiểu được." />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://topdev.vn/blog/yaml-la-gi/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="YAML là gì? | TopDev" />
+	<meta property="og:description" content="YAML là 1 định dạng dũ liệu trung gian được thiết kế để người dùng và các ngôn ngữ lập trình cùng hiểu được." />
+	<meta property="og:url" content="https://topdev.vn/blog/yaml-la-gi/" />
+	<meta property="og:site_name" content="TopDev" />
+	<meta property="article:publisher" content="https://www.facebook.com/topdevvietnam/" />
+	<meta property="article:published_time" content="2021-06-12T01:00:26+00:00" />
+	<meta property="article:modified_time" content="2021-06-11T05:21:23+00:00" />
+	<meta property="og:image" content="https://topdev.vn/blog/wp-content/uploads/2021/06/yaml.jpg" />
+	<meta property="og:image:width" content="1201" />
+	<meta property="og:image:height" content="628" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@topdevvn" />
+	<meta name="twitter:site" content="@topdevvn" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://topdev.vn/blog/#organization","name":"TopDev","url":"https://topdev.vn/blog/","sameAs":["https://www.facebook.com/topdevvietnam/","https://twitter.com/topdevvn"],"logo":{"@type":"ImageObject","@id":"https://topdev.vn/blog/#logo","inLanguage":"en-US","url":"https://topdev.vn/blog/wp-content/uploads/2017/01/logotopdev.png","width":270,"height":68,"caption":"TopDev"},"image":{"@id":"https://topdev.vn/blog/#logo"}},{"@type":"WebSite","@id":"https://topdev.vn/blog/#website","url":"https://topdev.vn/blog/","name":"TopDev","description":"Vi\u1ec7c L\u00e0m IT H\u00e0ng \u0110\u1ea7u","publisher":{"@id":"https://topdev.vn/blog/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://topdev.vn/blog/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://topdev.vn/blog/yaml-la-gi/#primaryimage","inLanguage":"en-US","url":"https://topdev.vn/blog/wp-content/uploads/2021/06/yaml.jpg","width":1201,"height":628,"caption":"YAML l\u00e0 g\u00ec?"},{"@type":"WebPage","@id":"https://topdev.vn/blog/yaml-la-gi/#webpage","url":"https://topdev.vn/blog/yaml-la-gi/","name":"YAML l\u00e0 g\u00ec? | TopDev","isPartOf":{"@id":"https://topdev.vn/blog/#website"},"primaryImageOfPage":{"@id":"https://topdev.vn/blog/yaml-la-gi/#primaryimage"},"datePublished":"2021-06-12T01:00:26+00:00","dateModified":"2021-06-11T05:21:23+00:00","description":"YAML l\u00e0 1 \u0111\u1ecbnh d\u1ea1ng d\u0169 li\u1ec7u trung gian \u0111\u01b0\u1ee3c thi\u1ebft k\u1ebf \u0111\u1ec3 ng\u01b0\u1eddi d\u00f9ng v\u00e0 c\u00e1c ng\u00f4n ng\u1eef l\u1eadp tr\u00ecnh c\u00f9ng hi\u1ec3u \u0111\u01b0\u1ee3c.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://topdev.vn/blog/yaml-la-gi/"]}]},{"@type":"Article","@id":"https://topdev.vn/blog/yaml-la-gi/#article","isPartOf":{"@id":"https://topdev.vn/blog/yaml-la-gi/#webpage"},"author":{"@id":"https://topdev.vn/blog/#/schema/person/bb2d5be12016e2651952a82e51a6c7c7"},"headline":"YAML l\u00e0 g\u00ec?","datePublished":"2021-06-12T01:00:26+00:00","dateModified":"2021-06-11T05:21:23+00:00","mainEntityOfPage":{"@id":"https://topdev.vn/blog/yaml-la-gi/#webpage"},"publisher":{"@id":"https://topdev.vn/blog/#organization"},"image":{"@id":"https://topdev.vn/blog/yaml-la-gi/#primaryimage"},"articleSection":"C\u00f4ng ngh\u1ec7,L\u1eadp Tr\u00ecnh","inLanguage":"en-US"},{"@type":["Person"],"@id":"https://topdev.vn/blog/#/schema/person/bb2d5be12016e2651952a82e51a6c7c7","name":"TopDev","image":{"@type":"ImageObject","@id":"https://topdev.vn/blog/#personlogo","inLanguage":"en-US","url":"https://topdev.vn/blog/wp-content/uploads/2020/09/topdev_1024x1024-150x150.png","caption":"TopDev"},"description":"Ban Bi\u00ean T\u1eadp Blog TopDev. Nice to meet you"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="TopDev &raquo; Feed" href="https://topdev.vn/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TopDev &raquo; Comments Feed" href="https://topdev.vn/blog/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/topdev.vn\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.6"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://topdev.vn/blog/wp-includes/css/dist/block-library/style.min.css?ver=5.4.6' type='text/css' media='all' />
+<link rel='stylesheet' id='elasticpress-related-posts-block-css'  href='https://topdev.vn/blog/wp-content/plugins/elasticpress/dist/css/related-posts-block-styles.min.css?ver=3.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://topdev.vn/blog/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.3.0.2' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='td-plugin-multi-purpose-css'  href='https://topdev.vn/blog/wp-content/plugins/td-composer/td-multi-purpose/style.css?ver=75663779ceaca21efa8b6f639056c3fd' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='google-fonts-style-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%7CRoboto%3A400%2C500%2C700&#038;display=swap&#038;ver=10.3.5' type='text/css' media='all' />
+<link rel='stylesheet' id='td-theme-css'  href='https://topdev.vn/blog/wp-content/themes/Newspaper/style.css?ver=10.3.5' type='text/css' media='all' />
+<style id='td-theme-inline-css' type='text/css'>
+    
+        @media (max-width: 767px) {
+            .td-header-desktop-wrap {
+                display: none;
+            }
+        }
+        @media (min-width: 767px) {
+            .td-header-mobile-wrap {
+                display: none;
+            }
+        }
+    
+	
+</style>
+<link rel='stylesheet' id='fixedtoc-style-css'  href='https://topdev.vn/blog/wp-content/plugins/fixed-toc/frontend/assets/css/ftoc.min.css?ver=3.1.18' type='text/css' media='all' />
+<style id='fixedtoc-style-inline-css' type='text/css'>
+.ftwp-in-post#ftwp-container-outer { height: auto; } #ftwp-container.ftwp-wrap #ftwp-contents { width: auto; height: auto; } .ftwp-in-post#ftwp-container-outer #ftwp-contents { height: auto; } .ftwp-in-post#ftwp-container-outer.ftwp-float-none #ftwp-contents { width: auto; } #ftwp-container.ftwp-wrap #ftwp-trigger { width: 40px; height: 40px; font-size: 24px; } #ftwp-container #ftwp-trigger.ftwp-border-thin { font-size: 23.5px; } #ftwp-container.ftwp-wrap #ftwp-header { font-size: 18px; font-family: Arial, Helvetica, sans-serif; } #ftwp-container.ftwp-wrap #ftwp-header-title { font-weight: bold; } #ftwp-container.ftwp-wrap #ftwp-list { font-size: 14px; font-family: Arial, Helvetica, sans-serif; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-anchor::before { font-size: 5.6px; } #ftwp-container.ftwp-wrap #ftwp-trigger { color: #ffffff; background: rgba(13,13,13,0.95); } #ftwp-container.ftwp-wrap #ftwp-trigger { border-color: rgba(51,51,51,0.95); } #ftwp-container.ftwp-wrap #ftwp-contents { border-color: rgba(51,51,51,0.95); } #ftwp-container.ftwp-wrap #ftwp-header { color: #444444; background: rgba(239,239,239,0.95); } #ftwp-container.ftwp-wrap #ftwp-contents:hover #ftwp-header { background: #efefef; } #ftwp-container.ftwp-wrap #ftwp-list { color: #444444; background: rgba(239,239,239,0.95); } #ftwp-container.ftwp-wrap #ftwp-contents:hover #ftwp-list { background: #efefef; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-anchor:hover { color: #dd3333; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-anchor:focus, #ftwp-container.ftwp-wrap #ftwp-list .ftwp-active, #ftwp-container.ftwp-wrap #ftwp-list .ftwp-active:hover { color: #fff; } #ftwp-container.ftwp-wrap #ftwp-list .ftwp-text::before { background: rgba(221,51,51,0.95); } .ftwp-heading-target::before { background: rgba(221,51,51,0.95); }
+.ftwp-in-post#ftwp-container-outer.ftwp-float-none #ftwp-contents { width: auto; }
+</style>
+<link rel='stylesheet' id='js_composer_front-css'  href='https://topdev.vn/blog/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.4.7' type='text/css' media='all' />
+<link rel='stylesheet' id='td-legacy-framework-front-style-css'  href='https://topdev.vn/blog/wp-content/plugins/td-composer/legacy/Newspaper/assets/css/td_legacy_main.css?ver=75663779ceaca21efa8b6f639056c3fd' type='text/css' media='all' />
+<link rel='stylesheet' id='td-standard-pack-framework-front-style-css'  href='https://topdev.vn/blog/wp-content/plugins/td-standard-pack/Newspaper/assets/css/td_standard_pack_main.css?ver=e06dc97a9cdcc3f12ae1599dfcd5b98f' type='text/css' media='all' />
+<link rel='stylesheet' id='tdb_front_style-css'  href='https://topdev.vn/blog/wp-content/plugins/td-cloud-library/assets/css/tdb_less_front.css?ver=b609d31b17f396913344a17574b6a2f5' type='text/css' media='all' />
+<script type='text/javascript' src='https://topdev.vn/blog/wp-content/plugins/jquery-updater/js/jquery-3.5.1.min.js?ver=3.5.1'></script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-content/plugins/jquery-updater/js/jquery-migrate-3.3.0.min.js?ver=3.3.0'></script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.3.0.2'></script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.3.0.2'></script>
+<link rel='https://api.w.org/' href='https://topdev.vn/blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://topdev.vn/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://topdev.vn/blog/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4.6" />
+<link rel='shortlink' href='https://topdev.vn/blog/?p=40287' />
+<link rel="alternate" type="application/json+oembed" href="https://topdev.vn/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftopdev.vn%2Fblog%2Fyaml-la-gi%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://topdev.vn/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftopdev.vn%2Fblog%2Fyaml-la-gi%2F&#038;format=xml" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TXN8TW8');</script>
+<!-- End Google Tag Manager -->
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" ></script> 
+<script >
+    window.googletag = window.googletag || {
+        cmd: []
+    };
+googletag.cmd.push(function() {
+    googletag.defineSlot('/22203236202/blog_homepage_middle', [728, 90], 'div-gpt-ad-1656052469028-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+});
+googletag.cmd.push(function() {
+    googletag.defineSlot('/22203236202/blog_homepage_bottom', [728, 90], 'div-gpt-ad-1656053935890-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+});
+googletag.cmd.push(function() {
+    googletag.defineSlot('/22203236202/blog_homepage_right', [300, 250], 'div-gpt-ad-1656054003679-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+});
+googletag.cmd.push(function() {
+    googletag.defineSlot('/22203236202/blog_detail_bottom', [696, 90], 'div-gpt-ad-1656054068056-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+});
+googletag.cmd.push(function() {
+    googletag.defineSlot('/22203236202/blog_detail_right', [300, 250], 'div-gpt-ad-1656054129741-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+});
+ 
+</script>
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script> <script>window.googletag = window.googletag || {cmd: []};googletag.cmd.push(function() { googletag.defineSlot('/22203236202/1212ads-12122020', [728, 90], 'div-gpt-ad-1607754975767-0').addService(googletag.pubads()); googletag.defineSlot('/22203236202/1212ads-12122020/TopDevBlog_Detail_SiderbarAds_300x250', [300, 250], 'div-gpt-ad-1607754678659-0').addService(googletag.pubads()); googletag.defineSlot('/22203236202/1212ads-12122020/topdev-blog-homepage728x90', [728, 90], 'div-gpt-ad-1610357796951-0').addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices();}); </script><script type="application/ld+json" data-schema="40287-post-Default">{"@context":"https:\/\/schema.org\/","@type":"TechArticle","@id":"https:\/\/topdev.vn\/blog\/yaml-la-gi\/#TechArticle","mainEntityOfPage":"https:\/\/topdev.vn\/blog\/yaml-la-gi\/","headline":"YAML l\u00e0 g\u00ec?","name":"YAML l\u00e0 g\u00ec?","description":"YAML l\u00e0 1 \u0111\u1ecbnh d\u1ea1ng d\u0169 li\u1ec7u trung gian \u0111\u01b0\u1ee3c thi\u1ebft k\u1ebf \u0111\u1ec3 ng\u01b0\u1eddi d\u00f9ng v\u00e0 c\u00e1c ng\u00f4n ng\u1eef l\u1eadp tr\u00ecnh c\u00f9ng hi\u1ec3u \u0111\u01b0\u1ee3c.","datePublished":"2021-06-12","dateModified":"2021-06-11","author":{"@type":"Person","@id":"https:\/\/topdev.vn\/blog\/author\/staff\/#Person","name":"TopDev","url":"https:\/\/topdev.vn\/blog\/author\/staff\/","description":"Ban Bi\u00ean T\u1eadp Blog TopDev. Nice to meet you","image":{"@type":"ImageObject","@id":"https:\/\/topdev.vn\/blog\/wp-content\/uploads\/2020\/09\/topdev_1024x1024-150x150.png","url":"https:\/\/topdev.vn\/blog\/wp-content\/uploads\/2020\/09\/topdev_1024x1024-150x150.png","height":96,"width":96}},"publisher":{"@type":"Organization","name":"TopDev - Tech Blog","logo":{"@type":"ImageObject","@id":"https:\/\/topdev.vn\/blog\/wp-content\/uploads\/2017\/01\/logotopdev.png","url":"https:\/\/topdev.vn\/blog\/wp-content\/uploads\/2017\/01\/logotopdev.png","width":600,"height":60}},"image":{"@type":"ImageObject","@id":"https:\/\/topdev.vn\/blog\/wp-content\/uploads\/2021\/06\/yaml.jpg","url":"https:\/\/topdev.vn\/blog\/wp-content\/uploads\/2021\/06\/yaml.jpg","height":628,"width":1201},"url":"https:\/\/topdev.vn\/blog\/yaml-la-gi\/","about":["C\u00f4ng ngh\u1ec7","L\u1eadp Tr\u00ecnh"],"wordCount":1983}</script>
+<script type="application/ld+json" data-schema="Breadcrumb">{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Blog","item":"https:\/\/topdev.vn\/blog\/#breadcrumbitem"},{"@type":"ListItem","position":2,"name":"YAML l\u00e0 g\u00ec?","item":"https:\/\/topdev.vn\/blog\/yaml-la-gi\/#breadcrumbitem"}]}</script>
+		<script>
+			document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );
+		</script>
+				<style>
+			.no-js img.lazyload { display: none; }
+			figure.wp-block-image img.lazyloading { min-width: 150px; }
+							.lazyload, .lazyloading { opacity: 0; }
+				.lazyloaded {
+					opacity: 1;
+					transition: opacity 400ms;
+					transition-delay: 0ms;
+				}
+					</style>
+		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+        <script>
+        window.tdb_globals = {"wpRestNonce":"a08e96b182","wpRestUrl":"https:\/\/topdev.vn\/blog\/wp-json\/","permalinkStructure":"\/%postname%\/","isAjax":false,"isAdminBarShowing":false,"autoloadScrollPercent":50,"postAutoloadStatus":"off","origPostEditUrl":null};
+    </script>
+    			<script>
+				window.tdwGlobal = {"adminUrl":"https:\/\/topdev.vn\/blog\/wp-admin\/","wpRestNonce":"a08e96b182","wpRestUrl":"https:\/\/topdev.vn\/blog\/wp-json\/","permalinkStructure":"\/%postname%\/"};
+			</script>
+			<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://topdev.vn/blog/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><link rel="amphtml" href="https://topdev.vn/blog/yaml-la-gi/?amp"><link rel="preload" as="style" href="https://topdev.vn/blog/wp-content/plugins/code-prettify/prettify/prettify.css" /><meta name="generator" content="Powered by Slider Revolution 5.3.0.2 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+
+<!-- JS generated by theme -->
+
+<script>
+    
+    
+
+	    var tdBlocksArray = []; //here we store all the items for the current page
+
+	    //td_block class - each ajax block uses a object of this class for requests
+	    function tdBlock() {
+		    this.id = '';
+		    this.block_type = 1; //block type id (1-234 etc)
+		    this.atts = '';
+		    this.td_column_number = '';
+		    this.td_current_page = 1; //
+		    this.post_count = 0; //from wp
+		    this.found_posts = 0; //from wp
+		    this.max_num_pages = 0; //from wp
+		    this.td_filter_value = ''; //current live filter value
+		    this.is_ajax_running = false;
+		    this.td_user_action = ''; // load more or infinite loader (used by the animation)
+		    this.header_color = '';
+		    this.ajax_pagination_infinite_stop = ''; //show load more at page x
+	    }
+
+
+        // td_js_generator - mini detector
+        (function(){
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+	        if ( navigator.userAgent.indexOf("MSIE 10.0") > -1 ) {
+                htmlTag.className += ' ie10';
+            }
+
+            if ( !!navigator.userAgent.match(/Trident.*rv\:11\./) ) {
+                htmlTag.className += ' ie11';
+            }
+
+	        if ( navigator.userAgent.indexOf("Edge") > -1 ) {
+                htmlTag.className += ' ieEdge';
+            }
+
+            if ( /(iPad|iPhone|iPod)/g.test(navigator.userAgent) ) {
+                htmlTag.className += ' td-md-is-ios';
+            }
+
+            var user_agent = navigator.userAgent.toLowerCase();
+            if ( user_agent.indexOf("android") > -1 ) {
+                htmlTag.className += ' td-md-is-android';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Mac OS X')  ) {
+                htmlTag.className += ' td-md-is-os-x';
+            }
+
+            if ( /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) ) {
+               htmlTag.className += ' td-md-is-chrome';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Firefox') ) {
+                htmlTag.className += ' td-md-is-firefox';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Safari') && -1 === navigator.userAgent.indexOf('Chrome') ) {
+                htmlTag.className += ' td-md-is-safari';
+            }
+
+            if( -1 !== navigator.userAgent.indexOf('IEMobile') ){
+                htmlTag.className += ' td-md-is-iemobile';
+            }
+
+        })();
+
+
+
+
+        var tdLocalCache = {};
+
+        ( function () {
+            "use strict";
+
+            tdLocalCache = {
+                data: {},
+                remove: function (resource_id) {
+                    delete tdLocalCache.data[resource_id];
+                },
+                exist: function (resource_id) {
+                    return tdLocalCache.data.hasOwnProperty(resource_id) && tdLocalCache.data[resource_id] !== null;
+                },
+                get: function (resource_id) {
+                    return tdLocalCache.data[resource_id];
+                },
+                set: function (resource_id, cachedData) {
+                    tdLocalCache.remove(resource_id);
+                    tdLocalCache.data[resource_id] = cachedData;
+                }
+            };
+        })();
+
+    
+    
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var tdc_is_installed="yes";
+var td_ajax_url="https:\/\/topdev.vn\/blog\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=10.3.5";
+var td_get_template_directory_uri="https:\/\/topdev.vn\/blog\/wp-content\/plugins\/td-composer\/legacy\/common";
+var tds_snap_menu="";
+var tds_logo_on_sticky="";
+var tds_header_style="3";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var tds_more_articles_on_post_enable="";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=3000;
+var tds_theme_color_site_wide="#e24a32";
+var tds_smart_sidebar="enabled";
+var tdThemeName="Newspaper";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+var tdBlockNonce="dcb5e933ce";
+var tdDateNamesI18n={"month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"month_names_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"day_names":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"day_names_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";
+</script>
+
+
+
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "WebSite",
+                    "@id": "https://topdev.vn/blog/",
+                    "name": "Home"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                    "item": {
+                    "@type": "WebPage",
+                    "@id": "https://topdev.vn/blog/category/cong-nghe/",
+                    "name": "Công nghệ"
+                }
+            }
+            ,{
+                "@type": "ListItem",
+                "position": 3,
+                    "item": {
+                    "@type": "WebPage",
+                    "@id": "https://topdev.vn/blog/yaml-la-gi/",
+                    "name": "YAML là gì?"                                
+                }
+            }    
+        ]
+    }
+</script>
+
+<!-- Button style compiled by theme -->
+
+<style>
+    .tdm_block_column_content:hover .tdm-col-content-title-url .tdm-title,
+                .tds-button2 .tdm-btn-text,
+                .tds-button2 i,
+                .tds-button5:hover .tdm-btn-text,
+                .tds-button5:hover i,
+                .tds-button6 .tdm-btn-text,
+                .tds-button6 i,
+                .tdm_block_list .tdm-list-item i,
+                .tdm_block_pricing .tdm-pricing-feature i,
+                .tdm-social-item i {
+                    color: #e24a32;
+                }
+                .tds-button1,
+                .tds-button6:after,
+                .tds-title2 .tdm-title-line:after,
+                .tds-title3 .tdm-title-line:after,
+                .tdm_block_pricing.tdm-pricing-featured:before,
+                .tdm_block_pricing.tds_pricing2_block.tdm-pricing-featured .tdm-pricing-header,
+                .tds-progress-bar1 .tdm-progress-bar:after,
+                .tds-progress-bar2 .tdm-progress-bar:after,
+                .tds-social3 .tdm-social-item {
+                    background-color: #e24a32;
+                }
+                .tds-button2:before,
+                .tds-button6:before,
+                .tds-progress-bar3 .tdm-progress-bar:after {
+                  border-color: #e24a32;
+                }
+                .tdm-btn-style1 {
+					background-color: #e24a32;
+				}
+				.tdm-btn-style2:before {
+				    border-color: #e24a32;
+				}
+				.tdm-btn-style2 {
+				    color: #e24a32;
+				}
+				.tdm-btn-style3 {
+				    -webkit-box-shadow: 0 2px 16px #e24a32;
+                    -moz-box-shadow: 0 2px 16px #e24a32;
+                    box-shadow: 0 2px 16px #e24a32;
+				}
+				.tdm-btn-style3:hover {
+				    -webkit-box-shadow: 0 4px 26px #e24a32;
+                    -moz-box-shadow: 0 4px 26px #e24a32;
+                    box-shadow: 0 4px 26px #e24a32;
+				}
+</style>
+
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>	<style id="tdw-css-placeholder"></style></head>
+
+<body class="post-template-default single single-post postid-40287 single-format-standard td-standard-pack yaml-la-gi global-block-template-14 single_template_5 wpb-js-composer js-comp-ver-5.4.7 vc_responsive has-ftoc td-full-layout">
+
+        <div class="td-scroll-up"><i class="td-icon-menu-up"></i></div>
+
+    <div class="td-menu-background"></div>
+<div id="td-mobile-nav">
+    <div class="td-mobile-container">
+        <!-- mobile menu top section -->
+        <div class="td-menu-socials-wrap">
+            <!-- socials -->
+            <div class="td-menu-socials">
+                
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.facebook.com/topdevvietnam/" title="Facebook">
+                <i class="td-icon-font td-icon-facebook"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.linkedin.com/company/topdev-vn/" title="Linkedin">
+                <i class="td-icon-font td-icon-linkedin"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://twitter.com/Topdevvn" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>            </div>
+            <!-- close button -->
+            <div class="td-mobile-close">
+                <a href="#"><i class="td-icon-close-mobile"></i></a>
+            </div>
+        </div>
+
+        <!-- login section -->
+        
+        <!-- menu section -->
+        <div class="td-mobile-content">
+            <div class="menu-main-menu-container"><ul id="menu-main-menu" class="td-mobile-main-menu"><li id="menu-item-24642" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first menu-item-24642"><a href="https://topdev.vn/?src=topdev_blog&#038;medium=navbar&#038;campaign=link">Tìm việc IT</a></li>
+<li id="menu-item-24643" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24643"><a href="https://topdev.vn/tao-cv-online?src=topdev_blog&#038;medium=navbar&#038;campaign=link">Tạo CV Online</a></li>
+<li id="menu-item-24644" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24644"><a href="https://topdev.vn/nha-tuyen-dung?src=topdev_blog&#038;medium=navbar&#038;campaign=link">CÔNG TY TUYỂN DỤNG IT</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-8"><a href="https://topdev.vn/blog/category/lap-trinh/">Lập Trình<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-7246" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7246"><a href="https://topdev.vn/blog/category/lap-trinh/ai-machine-learning/">AI &#8211; Machine Learning</a></li>
+	<li id="menu-item-7248" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7248"><a href="https://topdev.vn/blog/category/lap-trinh/frontend/">Frontend</a></li>
+	<li id="menu-item-7247" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7247"><a href="https://topdev.vn/blog/category/lap-trinh/backend/">Backend</a></li>
+	<li id="menu-item-7249" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7249"><a href="https://topdev.vn/blog/category/lap-trinh/fullstack/">Fullstack</a></li>
+	<li id="menu-item-7250" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7250"><a href="https://topdev.vn/blog/category/lap-trinh/mobile/">Mobile</a></li>
+	<li id="menu-item-7251" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7251"><a href="https://topdev.vn/blog/category/lap-trinh/product/">Product</a></li>
+	<li id="menu-item-7299" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7299"><a href="https://topdev.vn/blog/category/lap-trinh/devops/">Devops</a></li>
+	<li id="menu-item-50541" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50541"><a href="https://topdev.vn/blog/category/lap-trinh/java/">Java</a></li>
+	<li id="menu-item-50542" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50542"><a href="https://topdev.vn/blog/category/lap-trinh/php/">PHP</a></li>
+	<li id="menu-item-50543" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50543"><a href="https://topdev.vn/blog/category/lap-trinh/python/">Python</a></li>
+	<li id="menu-item-1083" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1083"><a href="https://topdev.vn/blog/category/cong-nghe/">Xu hướng công nghệ</a></li>
+	<li id="menu-item-50545" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-50545"><a href="https://topdev.vn/blog/category/tong-quan-nganh-it/">Tổng quan ngành IT<i class="td-icon-menu-right td-element-after"></i></a>
+	<ul class="sub-menu">
+		<li id="menu-item-50546" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50546"><a href="https://topdev.vn/blog/category/bao-cao-thi-truong/">Báo cáo thị trường IT</a></li>
+		<li id="menu-item-50547" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50547"><a href="https://topdev.vn/blog/category/con-duong-su-nghiep/">Con đường sự nghiệp IT</a></li>
+		<li id="menu-item-50548" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50548"><a href="https://topdev.vn/blog/category/chuyen-gia-noi/">Chuyên gia nói</a></li>
+		<li id="menu-item-50550" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50550"><a href="https://topdev.vn/blog/category/su-kien/">Sự kiện IT</a></li>
+	</ul>
+</li>
+	<li id="menu-item-7926" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-7926"><a href="https://topdev.vn/blog/category/developer-resources/">Developer Resources<i class="td-icon-menu-right td-element-after"></i></a>
+	<ul class="sub-menu">
+		<li id="menu-item-7927" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7927"><a href="https://topdev.vn/blog/category/developer-resources/sach-lap-trinh/">Sách lập trình</a></li>
+		<li id="menu-item-7929" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7929"><a href="https://topdev.vn/blog/category/developer-resources/tai-lieu-lap-trinh/">Tài liệu lập trình</a></li>
+		<li id="menu-item-7928" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7928"><a href="https://topdev.vn/blog/category/developer-resources/source-code/">Source Code</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-7"><a href="https://topdev.vn/blog/category/hr/">KỸ NĂNG TÌM VIỆC<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-9" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9"><a href="https://topdev.vn/blog/category/phong-van/">Kinh nghiệm phỏng vấn</a></li>
+	<li id="menu-item-50556" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50556"><a href="https://topdev.vn/blog/category/cv-it/">Chuẩn hóa CV IT</a></li>
+	<li id="menu-item-50557" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50557"><a href="https://topdev.vn/blog/category/dam-phan-luong-thuong/">Đàm phán lương thưởng</a></li>
+	<li id="menu-item-50553" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-50553"><a href="https://topdev.vn/blog/category/cam-nang-tuyen-dung/">Cẩm nang tuyển dụng<i class="td-icon-menu-right td-element-after"></i></a>
+	<ul class="sub-menu">
+		<li id="menu-item-50554" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50554"><a href="https://topdev.vn/blog/category/tim-kiem-nhan-tai/">Tìm kiếm nhân tài</a></li>
+		<li id="menu-item-50555" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50555"><a href="https://topdev.vn/blog/category/nghe-thuat-quan-tri/">Nghệ thuật quản trị</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-24645" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24645"><a href="https://topdev.vn/page/trac-nghiem-tinh-cach?src=topdev_blog&#038;medium=navbar">Trắc nghiệm tính cách</a></li>
+</ul></div>        </div>
+    </div>
+
+    <!-- register/login section -->
+            <div id="login-form-mobile" class="td-register-section">
+            
+            <div id="td-login-mob" class="td-login-animation td-login-hide-mob">
+            	<!-- close button -->
+	            <div class="td-login-close">
+	                <a href="#" class="td-back-button"><i class="td-icon-read-down"></i></a>
+	                <div class="td-login-title">Sign in</div>
+	                <!-- close button -->
+		            <div class="td-mobile-close">
+		                <a href="#"><i class="td-icon-close-mobile"></i></a>
+		            </div>
+	            </div>
+	            <div class="td-login-form-wrap">
+	                <div class="td-login-panel-title"><span>Welcome!</span>Log into your account</div>
+	                <div class="td_display_err"></div>
+	                <div class="td-login-inputs"><input class="td-login-input" type="text" name="login_email" id="login_email-mob" value="" required><label>your username</label></div>
+	                <div class="td-login-inputs"><input class="td-login-input" type="password" name="login_pass" id="login_pass-mob" value="" required><label>your password</label></div>
+	                <input type="button" name="login_button" id="login_button-mob" class="td-login-button" value="LOG IN">
+	                <div class="td-login-info-text">
+	                <a href="#" id="forgot-pass-link-mob">Forgot your password?</a>
+	                </div>
+	                <div class="td-login-register-link">
+	                
+	                </div>
+	                
+	                
+
+                </div>
+            </div>
+
+            
+            
+            
+            
+            <div id="td-forgot-pass-mob" class="td-login-animation td-login-hide-mob">
+                <!-- close button -->
+	            <div class="td-forgot-pass-close">
+	                <a href="#" class="td-back-button"><i class="td-icon-read-down"></i></a>
+	                <div class="td-login-title">Password recovery</div>
+	            </div>
+	            <div class="td-login-form-wrap">
+	                <div class="td-login-panel-title">Recover your password</div>
+	                <div class="td_display_err"></div>
+	                <div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email-mob" value="" required><label>your email</label></div>
+	                <input type="button" name="forgot_button" id="forgot_button-mob" class="td-login-button" value="Send My Pass">
+                </div>
+            </div>
+        </div>
+    </div>    <div class="td-search-background"></div>
+<div class="td-search-wrap-mob">
+	<div class="td-drop-down-search">
+		<form method="get" class="td-search-form" action="https://topdev.vn/blog/">
+			<!-- close button -->
+			<div class="td-search-close">
+				<a href="#"><i class="td-icon-close-mobile"></i></a>
+			</div>
+			<div role="search" class="td-search-input">
+				<span>Search</span>
+				<input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off" />
+			</div>
+		</form>
+		<div id="td-aj-search-mob" class="td-ajax-search-flex"></div>
+	</div>
+</div>
+
+    <div id="td-outer-wrap" class="td-theme-wrap">
+    
+        
+            <div class="tdc-header-wrap ">
+
+            <!--
+Header style 3
+-->
+
+<!-- Promote app -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="wrap_promote_app promote_app_hidden">
+    <a href="#" class="content_link js_set_link_banner">
+        <img src="" alt="banner promote app desktop" class="js_set_img_banner" />
+        <div class="promote_content">
+            <div class="bt_close_promote js_close_promote_app"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
+    </a>
+</div>
+<!-- END Promote app -->
+
+<div class="td-header-wrap td-header-style-3 ">
+    
+    <div class="td-header-top-menu-full td-container-wrap ">
+        <div class="td-container td-header-row td-header-top-menu">
+            
+    <div class="top-bar-style-4">
+        <div class="td-header-sp-top-widget">
+    
+    </div>        
+<div class="td-header-sp-top-menu">
+
+
+	<div class="menu-top-container"><ul id="menu-top-menu" class="top-header-menu"><li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first td-menu-item td-normal-menu menu-item-13"><a href="tel:02862733496">028.6273.3496</a></li>
+<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-14"><a href="https://topdev.vn/recruit?src=topdev_blog&#038;medium=topbar&#038;campaign=link">Post a job</a></li>
+<li id="menu-item-24824" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-24824"><a href="https://topdev.vn/contact?src=topdev_blog&#038;medium=topbar&#038;campaign=link">Contact us</a></li>
+</ul></div></div>
+    </div>
+
+<!-- LOGIN MODAL -->
+
+                <div  id="login-form" class="white-popup-block mfp-hide mfp-with-anim">
+                    <div class="td-login-wrap">
+                        <a href="#" class="td-back-button"><i class="td-icon-modal-back"></i></a>
+                        <div id="td-login-div" class="td-login-form-div td-display-block">
+                            <div class="td-login-panel-title">Sign in</div>
+                            <div class="td-login-panel-descr">Welcome! Log into your account</div>
+                            <div class="td_display_err"></div>
+                            <div class="td-login-inputs"><input class="td-login-input" type="text" name="login_email" id="login_email" value="" required><label>your username</label></div>
+	                        <div class="td-login-inputs"><input class="td-login-input" type="password" name="login_pass" id="login_pass" value="" required><label>your password</label></div>
+                            <input type="button" name="login_button" id="login_button" class="wpb_button btn td-login-button" value="Login">
+                            <div class="td-login-info-text"><a href="#" id="forgot-pass-link">Forgot your password? Get help</a></div>
+                            
+                            
+                            
+                            
+                        </div>
+
+                        
+
+                         <div id="td-forgot-pass-div" class="td-login-form-div td-display-none">
+                            <div class="td-login-panel-title">Password recovery</div>
+                            <div class="td-login-panel-descr">Recover your password</div>
+                            <div class="td_display_err"></div>
+                            <div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email" value="" required><label>your email</label></div>
+                            <input type="button" name="forgot_button" id="forgot_button" class="wpb_button btn td-login-button" value="Send My Password">
+                            <div class="td-login-info-text">A password will be e-mailed to you.</div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                        </div>
+    </div>
+
+    <div class="td-banner-wrap-full td-container-wrap ">
+        <div class="td-container td-header-row td-header-header">
+            <div class="td-header-sp-logo">
+                        <a class="td-main-logo" href="https://topdev.vn/blog/">
+            <img  data-retina="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-retina.png"  alt="" data-src="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-1.png" class="td-retina-data lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img  data-retina="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-retina.png"  alt="" data-src="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-1.png" class="td-retina-data lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img class="td-retina-data" data-retina="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-retina.png" src="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-1.png" alt=""/></noscript></noscript>
+            <span class="td-visual-hidden">TopDev</span>
+        </a>
+                </div>
+                            <div class="td-header-sp-recs">
+                    <div class="td-header-rec-wrap">
+    <div class="td-a-rec td-a-rec-id-header  tdi_1_f45 td_block_template_14">
+<style>
+/* custom css */
+.tdi_1_f45.td-a-rec{
+					text-align: center;
+				}.tdi_1_f45 .td-element-style{
+					z-index: -1;
+				}.tdi_1_f45.td-a-rec-img{
+				    text-align: left;
+				}.tdi_1_f45.td-a-rec-img img{
+                    margin: 0 auto 0 0;
+                }@media (max-width: 767px) {
+				    .tdi_1_f45.td-a-rec-img {
+				        text-align: center;
+				    }
+                }
+</style><!-- /22203236202/blog_homepage_middle -->
+<div id='div-gpt-ad-1656052469028-0' style='min-width: 728px; min-height: 90px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1656052469028-0'); });
+  </script>
+</div></div>
+</div>                </div>
+                    </div>
+    </div>
+
+    <div class="td-header-menu-wrap-full td-container-wrap ">
+        
+        <div class="td-header-menu-wrap ">
+            <div class="td-container td-header-row td-header-main-menu black-menu">
+                <div id="td-header-menu" role="navigation">
+    <div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a></div>
+    <div class="td-main-menu-logo td-logo-in-header">
+        		<a class="td-mobile-logo td-sticky-disable" href="https://topdev.vn/">
+			<img  data-retina="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-mobile-retina.png"  alt="" data-src="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-mobile.png" class="td-retina-data lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img class="td-retina-data" data-retina="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-mobile-retina.png" src="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-mobile.png" alt=""/></noscript>
+		</a>
+			<a class="td-header-logo td-sticky-disable" href="https://topdev.vn/">
+			<img  data-retina="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-retina.png"  alt="" data-src="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-1.png" class="td-retina-data lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img  data-retina="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-retina.png"  alt="" data-src="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-1.png" class="td-retina-data lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img class="td-retina-data" data-retina="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-retina.png" src="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-1.png" alt=""/></noscript></noscript>
+		</a>
+	    </div>
+    <div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="sf-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first td-menu-item td-normal-menu menu-item-24642"><a href="https://topdev.vn/?src=topdev_blog&#038;medium=navbar&#038;campaign=link">Tìm việc IT</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-24643"><a href="https://topdev.vn/tao-cv-online?src=topdev_blog&#038;medium=navbar&#038;campaign=link">Tạo CV Online</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-24644"><a href="https://topdev.vn/nha-tuyen-dung?src=topdev_blog&#038;medium=navbar&#038;campaign=link">CÔNG TY TUYỂN DỤNG IT</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children td-menu-item td-normal-menu menu-item-8"><a href="https://topdev.vn/blog/category/lap-trinh/">Lập Trình</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7246"><a href="https://topdev.vn/blog/category/lap-trinh/ai-machine-learning/">AI &#8211; Machine Learning</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7248"><a href="https://topdev.vn/blog/category/lap-trinh/frontend/">Frontend</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7247"><a href="https://topdev.vn/blog/category/lap-trinh/backend/">Backend</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7249"><a href="https://topdev.vn/blog/category/lap-trinh/fullstack/">Fullstack</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7250"><a href="https://topdev.vn/blog/category/lap-trinh/mobile/">Mobile</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7251"><a href="https://topdev.vn/blog/category/lap-trinh/product/">Product</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7299"><a href="https://topdev.vn/blog/category/lap-trinh/devops/">Devops</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-50541"><a href="https://topdev.vn/blog/category/lap-trinh/java/">Java</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-50542"><a href="https://topdev.vn/blog/category/lap-trinh/php/">PHP</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-50543"><a href="https://topdev.vn/blog/category/lap-trinh/python/">Python</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent td-menu-item td-normal-menu menu-item-1083"><a href="https://topdev.vn/blog/category/cong-nghe/">Xu hướng công nghệ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-50545"><a href="https://topdev.vn/blog/category/tong-quan-nganh-it/">Tổng quan ngành IT</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-50546"><a href="https://topdev.vn/blog/category/bao-cao-thi-truong/">Báo cáo thị trường IT</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-50547"><a href="https://topdev.vn/blog/category/con-duong-su-nghiep/">Con đường sự nghiệp IT</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-50548"><a href="https://topdev.vn/blog/category/chuyen-gia-noi/">Chuyên gia nói</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-50550"><a href="https://topdev.vn/blog/category/su-kien/">Sự kiện IT</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-7926"><a href="https://topdev.vn/blog/category/developer-resources/">Developer Resources</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7927"><a href="https://topdev.vn/blog/category/developer-resources/sach-lap-trinh/">Sách lập trình</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7929"><a href="https://topdev.vn/blog/category/developer-resources/tai-lieu-lap-trinh/">Tài liệu lập trình</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-7928"><a href="https://topdev.vn/blog/category/developer-resources/source-code/">Source Code</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-7"><a href="https://topdev.vn/blog/category/hr/">KỸ NĂNG TÌM VIỆC</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-9"><a href="https://topdev.vn/blog/category/phong-van/">Kinh nghiệm phỏng vấn</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-50556"><a href="https://topdev.vn/blog/category/cv-it/">Chuẩn hóa CV IT</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-50557"><a href="https://topdev.vn/blog/category/dam-phan-luong-thuong/">Đàm phán lương thưởng</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-50553"><a href="https://topdev.vn/blog/category/cam-nang-tuyen-dung/">Cẩm nang tuyển dụng</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-50554"><a href="https://topdev.vn/blog/category/tim-kiem-nhan-tai/">Tìm kiếm nhân tài</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-50555"><a href="https://topdev.vn/blog/category/nghe-thuat-quan-tri/">Nghệ thuật quản trị</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-24645"><a href="https://topdev.vn/page/trac-nghiem-tinh-cach?src=topdev_blog&#038;medium=navbar">Trắc nghiệm tính cách</a></li>
+</ul></div></div>
+
+
+    <div class="header-search-wrap">
+        <div class="td-search-btns-wrap">
+            <a id="td-header-search-button" href="#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+            <a id="td-header-search-button-mob" href="#" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+        </div>
+
+        <div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+            <form method="get" class="td-search-form" action="https://topdev.vn/blog/">
+                <div role="search" class="td-head-form-search-wrap">
+                    <input id="td-header-search" type="text" value="" name="s" autocomplete="off" /><input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Search" />
+                </div>
+            </form>
+            <div id="td-aj-search"></div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- SCRIPT PROMOTE APP 2021 -->
+<script>
+    $( document ).ready(function() {
+        var promote_app_hidden = getCookie('promote_app_hide');
+
+        // handle get banner promote
+        $.get('https://api.topdev.vn/td/v2/get_banner_promote_app?type=Blog', function (data, textStatus, jqXHR) {
+            if ((data?.data || []).length !== 0 && !promote_app_hidden) {
+                $('.wrap_promote_app').removeClass('promote_app_hidden');
+                $('.js_set_link_banner').attr('href', data?.data[0]?.link);
+                $('.js_set_img_banner').attr('src', data?.data[0]?.image);
+            }
+        });
+ 
+        var d = new Date();
+        var mid_day = new Date();
+        mid_day.setHours(24);
+        mid_day.setMinutes(0);
+        mid_day.setSeconds(0);
+        if(d > mid_day) {
+            mid_day.setDate(mid_day.getDate() + 1)
+        }
+
+        var diff = (mid_day.getTime() - d.getTime()) / 1000;
+        var hours = parseInt(diff / 3600);
+        diff = diff % 3600;
+        var minutes = parseInt(diff / 60);
+       
+        // Click hide banner promote app
+        $('.js_close_promote_app').on('click', function(e){
+            e.preventDefault();
+            $('.wrap_promote_app').fadeOut();
+            setCookie('promote_app_hide', true, hours, minutes);
+        });
+    });
+
+    function setCookie(name, value, hours, minutes){
+        var expires = "";
+        if (hours || minutes) {
+            var date = new Date();
+            date.setTime(date.getTime() + (hours * 60 + minutes) * 60 * 1000);
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";    
+    }
+
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(";");
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == " ") c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0)
+                return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+</script>
+            </div>
+
+            
+<div class="td-main-content-wrap td-container-wrap">
+
+    <div class="td-container td-post-template-5 ">
+        <div class="td-crumb-container"><div class="entry-crumbs"><span><a title="" class="entry-crumb" href="https://topdev.vn/blog/">Home</a></span> <i class="td-icon-right td-bread-sep"></i> <span><a title="View all posts in Công nghệ" class="entry-crumb" href="https://topdev.vn/blog/category/cong-nghe/">Công nghệ</a></span> <i class="td-icon-right td-bread-sep td-bred-no-url-last"></i> <span class="td-bred-no-url-last">YAML là gì?</span></div></div>
+            <div class="td-pb-row">
+                                            <div class="td-pb-span8 td-main-content" role="main">
+                                <div class="td-ss-main-content">
+                                    
+    <article id="post-40287" class="post-40287 post type-post status-publish format-standard has-post-thumbnail category-cong-nghe category-lap-trinh post-ftoc">
+        <div class="td-post-header">
+
+            <ul class="td-category"><li class="entry-category"><a  href="https://topdev.vn/blog/category/cong-nghe/">Công nghệ</a></li><li class="entry-category"><a  href="https://topdev.vn/blog/category/lap-trinh/">Lập Trình</a></li></ul>
+            <header class="td-post-title">
+                <h1 class="entry-title">YAML là gì?</h1>
+
+                
+
+                <div class="td-module-meta-info">
+                                                                                <div class="td-post-views"><i class="td-icon-views"></i><span class="td-nr-views-40287">3720</span></div>                </div>
+
+            </header>
+
+        </div>
+
+        <div class="td-post-sharing-top"><div class="td-post-sharing-classic"><iframe frameBorder="0"  style="border:none; overflow:hidden; width:auto; height:21px; background-color:transparent;" data-src="https://www.facebook.com/plugins/like.php?href=https://topdev.vn/blog/yaml-la-gi/&amp;layout=button_count&amp;show_faces=false&amp;width=105&amp;action=like&amp;colorscheme=light&amp;height=21" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe></div><div id="td_social_sharing_article_top" class="td-post-sharing td-ps-border td-ps-border-grey td-ps-notext td-ps-icon-color td-ps-text-color td-post-sharing-style16 "><div class="td-post-sharing-visible"><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ftopdev.vn%2Fblog%2Fyaml-la-gi%2F">
+                                        <div class="td-social-but-icon"><i class="td-icon-facebook"></i></div>
+                                        <div class="td-social-but-text">Facebook</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://topdev.vn/blog/yaml-la-gi/&title=YAML+l%C3%A0+g%C3%AC%3F">
+                                        <div class="td-social-but-icon"><i class="td-icon-linkedin"></i></div>
+                                        <div class="td-social-but-text">Linkedin</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-telegram" href="https://telegram.me/share/url?url=https://topdev.vn/blog/yaml-la-gi/&text=YAML+l%C3%A0+g%C3%AC%3F">
+                                        <div class="td-social-but-icon"><i class="td-icon-telegram"></i></div>
+                                        <div class="td-social-but-text">Telegram</div>
+                                    </a></div><div class="td-social-sharing-hidden"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="#" data-block-uid="td_social_sharing_article_top">
+                                    <div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div>
+                                </a></div></div></div>
+
+        <div class="td-post-content tagdiv-type">
+            <div id="ftwp-container-outer" class="ftwp-in-post ftwp-float-none"><div id="ftwp-container" class="ftwp-wrap ftwp-hidden-state ftwp-minimize ftwp-middle-left"><button type="button" id="ftwp-trigger" class="ftwp-shape-round ftwp-border-thin" title="click To Maximize The Table Of Contents"><span class="ftwp-trigger-icon ftwp-icon-number"></span></button><nav id="ftwp-contents" class="ftwp-shape-round ftwp-border-thin"><header id="ftwp-header"><span id="ftwp-header-control" class="ftwp-icon-number"></span><button type="button" id="ftwp-header-minimize" class="ftwp-icon-expand" aria-labelledby="ftwp-header-title"></button><h3 id="ftwp-header-title">Mục lục nội dung</h3></header><ol id="ftwp-list" class="ftwp-liststyle-circle ftwp-effect-bounce-to-right ftwp-list-nest ftwp-colexp ftwp-colexp-icon"><li class="ftwp-item"><a class="ftwp-anchor" href="#yaml-la-gi"><span class="ftwp-text">YAML là gì?</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#yaml-dung-lam-gi"><span class="ftwp-text">YAML dùng làm gì?</span></a></li><li class="ftwp-item"><a class="ftwp-anchor" href="#cu-phap-su-dung-yaml"><span class="ftwp-text">Cú pháp sử dụng YAML</span></a></li></ol></nav></div></div>
+<div id="ftwp-postcontent"><p style="text-align: right;"><strong>Bài viết được sự cho phép của tác giả Lê Chí Dũng</strong></p>
+<h2 id="yaml-la-gi" class="ftwp-heading" style="text-align: justify;"><span id="YAML_la_gi">YAML là gì?</span></h2>
+<p style="text-align: justify;">YAML là 1 định dạng dũ liệu trung gian được thiết kế để người dùng và các ngôn ngữ lập trình cùng hiểu được. YAML được dùng vào mục đích tương tự JSON, XML nhưng nó lại có nhiều tính năng nổi bật hơn vì cấu trúc dữ liệu linh hoạt hơn, hỗ trợ nhiều ngôn ngữ lập trình, diễn đạt và mở rộng dữ liệu hơn và dễ sử dụng vì khá có nhiều kiểu dữ liệu lập trình.  chi tiết tại <a href="http://www.yaml.org/" target="_blank" rel="noopener noreferrer">http://www.yaml.org/</a></p>
+<div style="clear:both; margin-top:0em; margin-bottom:1em;"><a href="https://topdev.vn/blog/yaml-cho-web-developer/" target="_blank" class="u737df4db5661e5dd4d98259886243ca3"><style> .u737df4db5661e5dd4d98259886243ca3 { padding:0px; margin: 0; padding-top:1em!important; padding-bottom:1em!important; width:100%; display: block; font-weight:bold; background-color:#ECF0F1; border:0!important; border-left:4px solid #95A5A6!important; text-decoration:none; } .u737df4db5661e5dd4d98259886243ca3:active, .u737df4db5661e5dd4d98259886243ca3:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; text-decoration:none; } .u737df4db5661e5dd4d98259886243ca3 { transition: background-color 250ms; webkit-transition: background-color 250ms; opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; } .u737df4db5661e5dd4d98259886243ca3 .ctaText { font-weight:bold; color:inherit; text-decoration:none; font-size: 16px; } .u737df4db5661e5dd4d98259886243ca3 .postTitle { color:#000000; text-decoration: underline!important; font-size: 16px; } .u737df4db5661e5dd4d98259886243ca3:hover .postTitle { text-decoration: underline!important; } </style><div style="padding-left:1em; padding-right:1em;"><span class="ctaText"></span>&nbsp; <span class="postTitle">Yaml cho web developer</span></div></a></div>
+<div style="clear:both; margin-top:0em; margin-bottom:1em;"><a href="https://topdev.vn/blog/bat-dau-tu-vi-tri-dev-lam-tot-se-duoc-trao-co-hoi-tro-thanh-leader/" target="_blank" class="u168d6186031619e2b24c790ddf698823"><style> .u168d6186031619e2b24c790ddf698823 { padding:0px; margin: 0; padding-top:1em!important; padding-bottom:1em!important; width:100%; display: block; font-weight:bold; background-color:#ECF0F1; border:0!important; border-left:4px solid #95A5A6!important; text-decoration:none; } .u168d6186031619e2b24c790ddf698823:active, .u168d6186031619e2b24c790ddf698823:hover { opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; text-decoration:none; } .u168d6186031619e2b24c790ddf698823 { transition: background-color 250ms; webkit-transition: background-color 250ms; opacity: 1; transition: opacity 250ms; webkit-transition: opacity 250ms; } .u168d6186031619e2b24c790ddf698823 .ctaText { font-weight:bold; color:inherit; text-decoration:none; font-size: 16px; } .u168d6186031619e2b24c790ddf698823 .postTitle { color:#000000; text-decoration: underline!important; font-size: 16px; } .u168d6186031619e2b24c790ddf698823:hover .postTitle { text-decoration: underline!important; } </style><div style="padding-left:1em; padding-right:1em;"><span class="ctaText"></span>&nbsp; <span class="postTitle">"Bắt đầu từ vị trí dev, làm tốt sẽ được trao cơ hội trở thành leader"</span></div></a></div>
+<p style="text-align: justify;">Ví dụ về 1 đoạn YAML được biểu diễn như sau:</p><div class="td-a-rec td-a-rec-id-content_inline  td-rec-hide-on-m td-rec-hide-on-tl td-rec-hide-on-tp td-rec-hide-on-p tdi_2_1fc td_block_template_14">
+<style>
+/* custom css */
+.tdi_2_1fc.td-a-rec{
+					text-align: center;
+				}.tdi_2_1fc .td-element-style{
+					z-index: -1;
+				}.tdi_2_1fc.td-a-rec-img{
+				    text-align: left;
+				}.tdi_2_1fc.td-a-rec-img img{
+                    margin: 0 auto 0 0;
+                }@media (max-width: 767px) {
+				    .tdi_2_1fc.td-a-rec-img {
+				        text-align: center;
+				    }
+                }
+</style><div class="td-all-devices" id="b-g-i-net-VGlQQWtzTDVsdVE9"></div>
+<div class="ml-rcm" rc-type="job" rc-layout="bjobs" rc-li="5" rc-for="url" rc-title="Những việc làm hấp dẫn" token-site="RIBPOSVJgL+kR9V78tC1PePVkAR8STLmwYHXhY4o2z+8Jg6rR09xCNe2Zk2K/rcY1dv3kOtiRmtj5J4rtFRYiw==" animate="on"></div>
+<div class="td-all-devices"><a href="https://topdev.vn/tao-cv-online" target="_blank"><img  data-src="https://topdev.vn/blog/wp-content/uploads/2019/03/tao-cv-online-cn.jpg" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://topdev.vn/blog/wp-content/uploads/2019/03/tao-cv-online-cn.jpg"></noscript></a></div>
+</div>
+<div style="text-align: justify;" data-brk-container="repo">
+<div class="code-toolbar">
+<pre class="gistpen language-nasm" data-filename=""><code class=" language-nasm"><span class="token operator">-</span>
+  <span class="token label function">name:</span> dung
+  <span class="token label function">mail:</span> me@lcdung.top
+<span class="token operator">-</span>
+  <span class="token label function">name:</span> admin
+  <span class="token label function">mail:</span> admin@lcdung.top</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+</div>
+<p style="text-align: justify;"><a href="http://yaml-online-parser.appspot.com/" target="_blank" rel="noopener noreferrer">http://yaml-online-parser.appspot.com/</a> Là 1 trang chuyển đổi YAML sang JSON. Bạn nên dùng trang này trong lúc đọc sẽ nhanh hiểu hơn.</p>
+<h2 id="yaml-dung-lam-gi" class="ftwp-heading" style="text-align: justify;"><span id="YAML_dung_lam_gi">YAML dùng làm gì?</span></h2>
+<p style="text-align: justify;">Tương tự JSON hay XML, YAML có thể dùng để chứa đựng thông tin ở dạng text. Dùng cho các file config, lưu giá trị hằng…</p>
+<p style="text-align: justify;"><b>YAML và JSON</b></p>
+<p style="text-align: justify;">– JSON là YAML, nói cách khác JSON có thể đọc được bởi các trình đọc YAML, điều ngược lại không đúng.<br />
+– JSON đáp ứng tốt hơn mục đích trao đổi dữ liệu ( thông qua AJAX…), YAML để xử lý các dữ liệu offline (file config…). Chắc vì JSON thường được xử lý nhanh hơn (<a href="http://stackoverflow.com/questions/2451732/how-is-it-that-json-serialization-is-so-much-faster-than-yaml-serialization-in-p" target="_blank" rel="noopener noreferrer">http://stackoverflow.com/questions/2451732/how-is-it-that-json-serialization-is-so-much-faster-than-yaml-serialization-in-p</a>)</p>
+<p style="text-align: justify;"><b>YAML và XML</b></p>
+<p style="text-align: justify;">– YAML không có các thẻ thuộc tính như XML nhưng thay vào đó nó hỗ trợ các kiểu khai báo để xử lý dữ liệu.</p>
+<p style="text-align: justify;">Ví dụ<br />
+1 đoạn XML</p>
+<div style="text-align: justify;" data-brk-container="repo">
+<div class="code-toolbar">
+<pre class="gistpen language-markup" data-filename=""><code class=" language-markup"><span class="token tag"><span class="token punctuation">&lt;</span>user <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>babooey<span class="token punctuation">"</span></span> <span class="token attr-name">on</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cpu1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>firstname<span class="token punctuation">&gt;</span></span>Bob<span class="token tag"><span class="token punctuation">&lt;/</span>firstname<span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>lastname<span class="token punctuation">&gt;</span></span>Abooey<span class="token tag"><span class="token punctuation">&lt;/</span>lastname<span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>department<span class="token punctuation">&gt;</span></span>adv<span class="token tag"><span class="token punctuation">&lt;/</span>department<span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>cell<span class="token punctuation">&gt;</span></span>555-1212<span class="token tag"><span class="token punctuation">&lt;/</span>cell<span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>address <span class="token attr-name">password</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>xxxx<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>ahunter@example1.com<span class="token tag"><span class="token punctuation">&lt;/</span>address<span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>address <span class="token attr-name">password</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>xxxx<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>babooey@example2.com<span class="token tag"><span class="token punctuation">&lt;/</span>address<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;/</span>user<span class="token punctuation">&gt;</span></span></code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><button>Copy</button></div>
+<div class="toolbar-item"></div>
+</div>
+</div>
+</div>
+<p style="text-align: justify;">1 đoạn YAML</p>
+<div style="text-align: justify;" data-brk-container="repo">
+<div class="code-toolbar">
+<pre class="gistpen language-nasm" data-filename=""><code class=" language-nasm"><span class="token label function">babooey:</span>
+            computer : cpu1
+            <span class="token label function">firstname:</span> Bob
+            <span class="token label function">lastname:</span> Abooey
+            <span class="token label function">cell:</span> <span class="token number">555</span><span class="token operator">-</span><span class="token number">1212</span>
+            <span class="token label function">addresses:</span>
+                <span class="token operator">-</span> address: babooey@example1.com
+                  <span class="token label function">password:</span> xxxx
+                <span class="token operator">-</span> address: babooey@example2.com
+                  <span class="token label function">password:</span> xxxx</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><button>Copy</button></div>
+<div class="toolbar-item"></div>
+</div>
+</div>
+</div>
+<p style="text-align: justify;">Muốn lấy thông tin của 1 user: với XML bạn tìm đến thẻ user có id=”babooey”, với YAML bạn tìm đến key: babooey.</p>
+<p style="text-align: justify;">– Sau 2 ví dụ trên, bạn thấy cách viết nào tối ưu ngắn gọn và linh hoạt trong việc chỉnh sửa hơn!</p>
+<p style="text-align: justify;"><b>Ưu điểm YAML</b><br />
+– Hỗ trợ comment trong file<br />
+– Tính linh hoạt trong biểu diễn dữ liệu cao nhờ có hỗ trợ kiểu dữ liệu: float, array, list…<br />
+– Hỗ trợ phép gán (anchor)…<br />
+– YAML dễ đọc-hiểu-viết, cú pháp ngắn gọn làm đoạn code YAML trong khá thoáng đãng.- Hiện tại YAML có rất nhiều thư viện cho các ngôn ngữ khác nhau: Chi tiết xem ở đây <a href="http://yaml.org/" target="_blank" rel="noopener noreferrer">http://yaml.org/</a></p>
+<h2 id="cu-phap-su-dung-yaml" class="ftwp-heading" style="text-align: justify;"><span id="Cu_phap_su_dungYAML">Cú pháp sử dụng YAML</span></h2>
+<p style="text-align: justify;">– Giống cú pháp của Python, YAML yêu cầu thụt đầu dòng trước mỗi câu. Thụt đầu dòng bởi các dấu cách (tùy cấu trúc (khối lệnh – block) mà dùng 1 hay 2,4… dấu cách), không dùng tab.</p>
+<p style="text-align: justify;">– Dùng dấu # để bắt đầu comment.</p>
+<p style="text-align: justify;">– dấu “-” để bắt đầu cho 1 list các phần tử</p>
+<p style="text-align: justify;">Ví dụ:</p>
+<div style="text-align: justify;" data-brk-container="repo">
+<div class="code-toolbar">
+<pre class="gistpen language-nasm" data-filename=""><code class=" language-nasm"># start YAML
+<span class="token operator">-</span> a
+<span class="token operator">-</span> b
+<span class="token operator">-</span>
+  <span class="token operator">-</span> c1
+  <span class="token operator">-</span> c2
+<span class="token operator">-</span>
+  <span class="token operator">-</span>
+    <span class="token operator">-</span> d1
+    <span class="token operator">-</span> d2</code></pre>
+<div class="toolbar">
+<div class="toolbar-item"><button>Copy</button></div>
+<div class="toolbar-item"></div>
+</div>
+</div>
+</div>
+<p style="text-align: justify;">Kết quả: <a href="http://yaml-online-parser.appspot.com/?yaml=%23+start+YAML%0A-+a%0A-+b%0A-%0A++-+c1%0A++-+c2%0A-%0A++-%0A++++-+d1%0A++++-+d2%0A&amp;type=json" target="_blank" rel="nofollow noopener noreferrer">Do link dài nên rút gọn – Click vào đây</a></p>
+<p style="text-align: justify;">– “—” để bắt đầu cho 1 đoạn YAML, và … để kết thúc đoạn đó ( … có thể có hoặc không )</p>
+<p style="text-align: justify;">Ví dụ: <a href="http://yaml-online-parser.appspot.com/?yaml=---%0Atime%3A+20%3A03%3A20%0Aplayer%3A+Sammy+Sosa%0Aaction%3A+strike+(miss)%0A...%0A---%0Atime%3A+20%3A03%3A47%0Aplayer%3A+Sammy+Sosa%0Aaction%3A+grand+slam%0A...%0A&amp;type=json" target="_blank" rel="noopener noreferrer">Link</a></p>
+<p style="text-align: justify;">– Với các giá trị lặp lại hoặc dùng nhiều lần,dùng “&amp;” để gán và “*” để lấy giá trị ra:<br />
+Ví dụ: <a href="http://yaml-online-parser.appspot.com/?yaml=---%0Ahvn%3A%0A++-+name%3A+HVN%0A++-+color%3A+%26cl+pink%0Asam%3A%0A++-+name%3A+SAM%0A++-+color%3A+*cl%0A&amp;type=json" target="_blank" rel="nofollow noopener noreferrer">Link</a><br />
+Ở đây pink được gán nhãn cl bằng “&amp;cl” ở đầu. Để lấy lại giá trị pink dùng “*cl”.<br />
+Cái này có vẻ giống con trỏ trong C &amp; để ghi địa chỉ, * để lấy giá trị.</p>
+<p style="text-align: justify;">Tham khảo thêm về cú pháp khác ở đây: <a href="http://www.yaml.org/refcard.html" target="_blank" rel="noopener noreferrer">http://www.yaml.org/refcard.html</a></p>
+<p style="text-align: right;"><strong>Bài viết gốc được đăng tải tại <a href="https://lcdung.top/yaml-la-gi/">lcdung.top</a></strong></p>
+<p><strong>Có thể bạn quan tâm:</strong></p>
+<ul>
+<li class="entry-title"><a href="https://topdev.vn/blog/yaml-cho-web-developer/">Yaml cho web developer</a></li>
+<li class="entry-title"><a href="https://topdev.vn/blog/ho-tro-da-ngon-ngu-trong-flutter/">Hỗ trợ đa ngôn ngữ trong Flutter</a></li>
+<li class="entry-title"><a href="https://topdev.vn/blog/docker-to-serverless-google-cloud-platform/">Docker to Serverless (Google Cloud Platform)</a></li>
+</ul>
+<p style="text-align: center;"><em><strong>Xem thêm<a href="https://topdev.vn/it-jobs?q=developer&amp;cid=" target="_blank" rel="noopener noreferrer" data-wpel-link="exclude"> Việc làm Developer</a> hấp dẫn trên <a href="https://topdev.vn/" target="_blank" rel="noopener noreferrer" data-wpel-link="exclude">TopDev</a></strong></em></p>
+</div><div class="td-a-rec td-a-rec-id-content_bottom  tdi_3_470 td_block_template_14">
+<style>
+/* custom css */
+.tdi_3_470.td-a-rec{
+					text-align: center;
+				}.tdi_3_470 .td-element-style{
+					z-index: -1;
+				}.tdi_3_470.td-a-rec-img{
+				    text-align: left;
+				}.tdi_3_470.td-a-rec-img img{
+                    margin: 0 auto 0 0;
+                }@media (max-width: 767px) {
+				    .tdi_3_470.td-a-rec-img {
+				        text-align: center;
+				    }
+                }
+</style><div id="yt-content"></div>
+<div id="yt-script"><script>
+  var urlvideos = [
+'https://www.youtube.com/embed/59aCbPjR0Os',
+'https://www.youtube.com/embed/4XlPSGAhFmE',
+'https://www.youtube.com/embed/W2DpLTyuxRY',
+'https://www.youtube.com/embed/PvU-19CGL2w',
+'https://www.youtube.com/embed/4E626WM6JO0',
+'https://www.youtube.com/embed/-AfwQyWvM-E',
+'https://www.youtube.com/embed/BwWoNwNc73g',
+'https://www.youtube.com/embed/9XsTSlwO7MI',
+'https://www.youtube.com/embed/0dzUfNzCKxE',
+'https://www.youtube.com/embed/msXFz7tZ-OU',
+'https://www.youtube.com/embed/LHSDbuP40s8',
+'https://www.youtube.com/embed/o68qAtFS3CQ',
+'https://www.youtube.com/embed/edm_j5j-GzE',
+'https://www.youtube.com/embed/EpkmWkp1iQU',	
+'https://www.youtube.com/embed/reOK6DZb2sc',
+'https://www.youtube.com/embed/blsNHdm-gfo',
+'https://www.youtube.com/embed/mmHNowW8l-Y',
+'https://www.youtube.com/embed/PUlw_r2EgJ0',
+'https://www.youtube.com/embed/IkqAcPqZTxc'
+  					]
+  var urlvideo = urlvideos[Math.floor(Math.random() * urlvideos.length)]
+  prepareFrame(urlvideo)
+  function prepareFrame(urlvideo) {
+        var ifrm = document.createElement("iframe")
+        ifrm.setAttribute("src", urlvideo)
+        ifrm.setAttribute("frameborder", "0")
+        ifrm.setAttribute("allow", "autoplay; encrypted-media")
+        ifrm.setAttribute("width", "100%")
+        ifrm.setAttribute("height", "auto")
+        ifrm.style.height = "391.5px"
+        document.getElementById("yt-content").appendChild(ifrm)
+    }
+</script>
+</div>
+
+
+<!-- /22203236202/blog_detail_bottom -->
+<div id='div-gpt-ad-1656054068056-0' style='min-width: 728px; min-height: 90px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1656054068056-0'); });
+  </script>
+</div></div>        </div>
+
+
+        <footer>
+                        
+            <div class="td-post-source-tags">
+                                            </div>
+
+            <div class="td-post-sharing-bottom"><div class="td-post-sharing-classic"><iframe frameBorder="0"  style="border:none; overflow:hidden; width:auto; height:21px; background-color:transparent;" data-src="https://www.facebook.com/plugins/like.php?href=https://topdev.vn/blog/yaml-la-gi/&amp;layout=button_count&amp;show_faces=false&amp;width=105&amp;action=like&amp;colorscheme=light&amp;height=21" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe></div><div id="td_social_sharing_article_bottom" class="td-post-sharing td-ps-bg td-ps-padding td-post-sharing-style2 "><div class="td-post-sharing-visible"><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ftopdev.vn%2Fblog%2Fyaml-la-gi%2F">
+                                        <div class="td-social-but-icon"><i class="td-icon-facebook"></i></div>
+                                        <div class="td-social-but-text">Facebook</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://topdev.vn/blog/yaml-la-gi/&title=YAML+l%C3%A0+g%C3%AC%3F">
+                                        <div class="td-social-but-icon"><i class="td-icon-linkedin"></i></div>
+                                        <div class="td-social-but-text">Linkedin</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-telegram" href="https://telegram.me/share/url?url=https://topdev.vn/blog/yaml-la-gi/&text=YAML+l%C3%A0+g%C3%AC%3F">
+                                        <div class="td-social-but-icon"><i class="td-icon-telegram"></i></div>
+                                        <div class="td-social-but-text">Telegram</div>
+                                    </a></div><div class="td-social-sharing-hidden"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="#" data-block-uid="td_social_sharing_article_bottom">
+                                    <div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div>
+                                </a></div></div></div>                        <div class="author-box-wrap"><a href="https://topdev.vn/blog/author/staff/"><img  width="96" height="96" alt="Avatar"  data-src="https://topdev.vn/blog/wp-content/uploads/2020/09/topdev_1024x1024-150x150.png" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 photo avatar-default lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img src="https://topdev.vn/blog/wp-content/uploads/2020/09/topdev_1024x1024-150x150.png" width="96" height="96" alt="Avatar" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 photo avatar-default" /></noscript></a><div class="desc"><div class="td-author-name vcard author"><span class="fn"><a href="https://topdev.vn/blog/author/staff/">TopDev</a></span></div><div class="td-author-description">Ban Biên Tập Blog TopDev. Nice to meet you</div><div class="td-author-social"></div><div class="clearfix"></div></div></div>            <span class="td-page-meta"></span><span class="td-page-meta"><span class="td-page-meta"></span></span><span class="td-page-meta"></span>        </footer>
+
+    </article> <!-- /.post -->
+
+    
+                                </div>
+                            </div>
+                            <div class="td-pb-span4 td-main-sidebar" role="complementary">
+                                <div class="td-ss-main-sidebar">
+                                    <aside id="search-2" class="td_block_template_14 widget search-2 widget_search"><form method="get" class="td-search-form-widget" action="https://topdev.vn/blog/">
+    <div role="search">
+        <input class="td-widget-search-input" type="text" value="" name="s" id="s" /><input class="wpb_button wpb_btn-inverse btn" type="submit" id="searchsubmit" value="Search" />
+    </div>
+</form></aside><aside id="ep-related-posts-2" class="td_block_template_14 widget ep-related-posts-2 widget_ep-related-posts"><h4 class="td-block-title"><span>ĐỪNG BỎ LỠ</span></h4>
+			<ul>
+									<li><a href="https://topdev.vn/blog/api-la-gi-cac-nguyen-tac-xay-dung-rest-api/">API là gì? Các nguyên tắc xây dựng Rest API</a></li>
+									<li><a href="https://topdev.vn/blog/ham-explode-trong-php/">Hàm explode() trong PHP</a></li>
+									<li><a href="https://topdev.vn/blog/xay-dung-noi-dung-trang-html/">Xây dựng nội dung trang HTML</a></li>
+									<li><a href="https://topdev.vn/blog/database-migration-su-dung-liquibase/">Database migration sử dụng Liquibase</a></li>
+									<li><a href="https://topdev.vn/blog/c-token-la-gi-cu-phap-trong-lap-trinh-c-c/">C Token là gì? Cú pháp trong lập trình C/C++</a></li>
+							</ul>
+
+			</aside><aside id="custom_html-2" class="widget_text td_block_template_14 widget custom_html-2 widget_custom_html"><h4 class="td-block-title"><span>VIỆC LÀM IT LƯƠNG CAO</span></h4><div class="textwidget custom-html-widget"><ul><li><a href="https://topdev.vn/viec-lam-it/php-kt1?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm Php</a></li>
+<li><a href="https://topdev.vn/viec-lam-it/javascript-kt22?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm Javascript</a></li>
+   <li><a href="https://topdev.vn/viec-lam-it/java-kt21?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm Java</a></li>
+   <li><a href="https://topdev.vn/viec-lam-it/front-end-kt209?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm Frontend</a></li>
+   <li><a href="https://topdev.vn/viec-lam-it/back-end-kt210?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm Backend</a></li>
+   <li><a href="https://topdev.vn/viec-lam-it/net-kt73?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm .Net</a></li>
+   <li><a href="https://topdev.vn/viec-lam-it/python-kt34?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm Python</a></li>
+   <li><a href="https://topdev.vn/viec-lam-it/golang-kt203?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm Golang</a></li>
+   <li><a href="https://topdev.vn/viec-lam-it/ios-kt9?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm iOS</a></li>
+   <li><a href="https://topdev.vn/viec-lam-it/android-kt8?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm Android</a></li>
+   <li><a href="https://topdev.vn/viec-lam-it/flutter-kt1546?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm Flutter</a></li>
+   <li><a href="https://topdev.vn/viec-lam-it/tester-kt78?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm Tester</a></li>
+   <li><a href="https://topdev.vn/viec-lam-it/nodejs-kt36?src=topdev_blog&amp;medium=sidebar&amp;campaign=anchortext">Việc làm Nodejs</a></li>
+</ul></div></aside><div class="td-a-rec td-a-rec-id-sidebar  tdi_4_688 td_block_template_14">
+<style>
+/* custom css */
+.tdi_4_688.td-a-rec{
+					text-align: center;
+				}.tdi_4_688 .td-element-style{
+					z-index: -1;
+				}.tdi_4_688.td-a-rec-img{
+				    text-align: left;
+				}.tdi_4_688.td-a-rec-img img{
+                    margin: 0 auto 0 0;
+                }@media (max-width: 767px) {
+				    .tdi_4_688.td-a-rec-img {
+				        text-align: center;
+				    }
+                }
+</style><!-- /22203236202/blog_detail_right -->
+<div id='div-gpt-ad-1656054129741-0' style='min-width: 300px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1656054129741-0'); });
+  </script>
+</div></div>                                </div>
+                            </div>
+                                    </div> <!-- /.td-pb-row -->
+    </div> <!-- /.td-container -->
+</div> <!-- /.td-main-content-wrap -->
+
+<!-- Instagram -->
+
+	
+	
+            <div class="tdc-footer-wrap ">
+
+                <!-- Footer -->
+				<div class="td-footer-wrapper td-footer-container td-container-wrap ">
+    <div class="td-container">
+
+	    <div class="td-pb-row">
+		    <div class="td-pb-span12">
+                		    </div>
+	    </div>
+
+        <div class="td-pb-row">
+
+            <div class="td-pb-span4">
+                            </div>
+
+            <div class="td-pb-span4">
+                            </div>
+
+            <div class="td-pb-span4">
+                            </div>
+        </div>
+    </div>
+<div class="td-footer-bottom-full">
+    <div class="td-container">
+        <div class="td-pb-row">
+            <div class="td-pb-span3"><aside class="footer-logo-wrap"><a href="https://topdev.vn/blog/"><img   data-retina="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-retina.png" alt="" title="" width="816" data-src="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-1.png" class="td-retina-data lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><noscript><img class="td-retina-data" src="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-1.png" data-retina="https://topdev.vn/blog/wp-content/uploads/2020/08/logo-new-retina.png" alt="" title="" width="816" /></noscript></a></aside></div><div class="td-pb-span5"><aside class="footer-text-wrap"><div class="block-title"><span>ABOUT US</span></div><a href="https://topdev.vn" target="_blank">TopDev</a> is a recruitment network and ecosystem in Mobile & IT fields. We are top leading recruitment network in Mobile &  IT fields, in Vietnam, offering Tech talent solution which meets your needs. Our networks cover 95% of Tech communities in Vietnam and our clients come from both Vietnam and South East Asia.</br>
+Hotline: 028 6273 3496
+</br>
+</br>
+<div class="wrap_button_link_app" style="display: flex; margin-bottom: 12px;">
+  <a target="_blank" href="https://topdev.vn/s/E8iWsAgK" class="bt_app_store" rel="nooppener noreferrer" style="margin-right: 4px;">
+    <img rel="nofollow"  alt="app_store"  style="height: 27px !important" data-src="https://assets.topdev.vn/static/assets/promote_app/app_store_img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img rel="nofollow" src="https://assets.topdev.vn/static/assets/promote_app/app_store_img.png" alt="app_store"  style="height: 27px !important"></noscript></a>
+  
+  <a target="_blank" href="https://play.google.com/store/apps/details?id=it.jobs.topdev&referrer=utm_source%3Dtopdev_blog%26utm_medium%3Dfooter_default " class="bt_google_store" rel="nooppener noreferrer">
+    <img rel="nofollow"  alt="google_play" style="height: 27px !important" data-src="https://assets.topdev.vn/static/assets/promote_app/google_play_img.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img rel="nofollow" src="https://assets.topdev.vn/static/assets/promote_app/google_play_img.png" alt="google_play" style="height: 27px !important"></noscript></a>
+      
+    </div><div class="footer-email-wrap">Contact us: <a href="mailto:contact@topdev.vn">contact@topdev.vn</a></div></aside></div><div class="td-pb-span4"><aside class="footer-social-wrap td-social-style-2"><div class="block-title"><span>FOLLOW US</span></div>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.facebook.com/topdevvietnam/" title="Facebook">
+                <i class="td-icon-font td-icon-facebook"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://www.linkedin.com/company/topdev-vn/" title="Linkedin">
+                <i class="td-icon-font td-icon-linkedin"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="https://twitter.com/Topdevvn" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span></aside></div>        </div>
+    </div>
+</div>
+</div>
+                <!-- Sub Footer -->
+				            </div><!--close td-footer-wrap-->
+			
+</div><!--close td-outer-wrap-->
+
+
+<script type='text/javascript' src='https://topdev.vn/blog/expand-auth.js?v=136'>
+</script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script type="text/javascript">
+if(jQuery('#noads').is(':visible')){
+jQuery('#yt-content').remove();
+}
+</script>
+<!-- Techtalk Follow Code -->
+<script type="text/javascript">
+(function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='//tr.topdevvn.com/js/follow.js';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!-- End Techtalk Follow Code —>
+
+    <!--
+
+        Theme: Newspaper by tagDiv.com 2020
+        Version: 10.3.5 (rara)
+        Deploy mode: deploy
+        Speed booster: v4.9.2
+
+        uid: 631704f385709
+    -->
+
+    
+<!-- Custom css from theme panel -->
+<style type="text/css" media="screen">
+/* custom css theme panel */
+.td-header-style-6 .td-main-menu-logo img {
+    max-height: 60px;
+}
+.td-post-content blockquote ul {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  font-style: italic;
+  /*text-align: center;*/
+  /*text-transform: uppercase;*/
+  color: #737f96;
+  word-wrap: break-word;
+  /* responsive portrait tablet */
+  /* responsive portrait phone */
+}
+.bbCodeBlock {
+    margin: .75em 0;
+    background: #f1f3fb;
+    border: 1px solid #e7ecf5;
+    border-left: 2px solid #f15a22;
+    display: block;
+}
+.bbCodeBlock-expandLink {
+     position: absolute;
+    text-align:center;
+    top: 95px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    cursor: pointer;
+    z-index: 100;
+    background: transparent;
+    background: linear-gradient(to bottom,rgba(241,243,251,0) 0%,#f1f3fb 60%);
+}
+.bbCodeBlock-content {
+    position: relative;
+    padding: 10px 16px;
+}
+.bbCodeBlock-expandLink a {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #4db2ec;
+    text-decoration: none;
+
+}
+.bbCodeBlock--expandable .bbCodeBlock-expandContent {
+    max-height: 150px;
+    overflow: hidden;
+}
+.wp-polls{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #222;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: #efefeff2;
+}
+
+.tagdiv-type embed, .tagdiv-type iframe, .tagdiv-type object {
+    width: 100%;
+}
+
+#2022-06-28
+.td-pb-span8.td-main-content {
+    padding: 0 0 0 24px;
+}
+.td-pb-span8.td-main-content .td-ss-main-content {
+    width: 728px;
+}
+.td-pb-span4.td-main-sidebar .td-ss-main-sidebar {
+    width: 300px;
+}
+.td-pb-span4.td-main-sidebar {
+    padding-left: 48px;
+}
+</style>
+
+<div class="td-container"><script>
+  // script append text link for mobile
+  const html = `<div class=" td-container box-list-link" id="box-list-link">
+      <div class="container">
+          <div class="grid">
+              <div class="grid-item">
+                  <div class="box-link">
+                      <div class="box-link-top">
+                          <div class="title">Việc làm HOT cho Fresher<span class="icon">
+                              </span></div>
+                      </div>
+                      <ul class="list-link">
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/java-fresher-kt21" class="text-link">Việc làm Fresher Java</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/javascript-fresher-kt22"
+                                  class="text-link">Việc làm Fresher Javascript</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/php-fresher-kt1" class="text-link">Việc làm Fresher PHP</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/python-fresher-kt34" class="text-link">Việc làm Fresher Python</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/reactjs-fresher-kt214" class="text-link">Việc làm Fresher ReactJS</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/nodejs-fresher-kt36" class="text-link">Việc làm Fresher NodeJS</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/c-c-fresher-kt401" class="text-link">Việc làm Fresher C/C++</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/tester-fresher-kt78" class="text-link">Việc làm Fresher Tester</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/front-end-fresher-kt209"
+                                  class="text-link">Việc làm Fresher Frontend</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/back-end-fresher-kt210"
+                                  class="text-link">Việc làm Fresher Backend</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="grid-item">
+                  <div class="box-link">
+                      <div class="title">Việc làm theo ngành nghề<span class="icon">
+                          </span></div>
+                      <ul class="list-link">
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/outsourcing-kt4276" class="text-link">Việc
+                                  làm IT
+                                  ngành Outsourcing</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/product-kt3919" class="text-link">Việc
+                                  làm IT ngành Product</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/ngan-hang-kt3935" class="text-link">Việc
+                                  làm IT ngành Ngân hàng</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/vien-thong-kt3956" class="text-link">Việc làm
+                                  IT
+                                  ngành Viễn thông</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/giai-tri-game-kt3943" class="text-link">Việc
+                                  làm
+                                  IT ngành Game / Giải trí</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/fintech-kt3944" class="text-link">Việc
+                                  làm IT ngành Fintech</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/phan-cung-kt3938" class="text-link">Việc
+                                  làm IT ngành Phần cứng</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/phan-mem-kt3939" class="text-link">Việc
+                                  làm IT ngành Phần mềm</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/quang-cao-truyen-thong-kt3930"
+                                  class="text-link">Việc làm IT ngành Quảng cáo truyền thông</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/dich-vu-it-kt3948" class="text-link">Việc làm
+                                  IT
+                                  ngành Dịch vụ IT</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="grid-item">
+                  <div class="box-link">
+                      <div class="title">Việc làm IT theo loại hình<span class="icon">
+                          </span></div>
+                      <ul class="list-link">
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/intern-kt1616"
+                                  class="text-link">Việc làm thực tập sinh IT</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/fresher-kt1617"
+                                  class="text-link">Việc làm IT Fresher</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/ho-chi-minh-kl79"
+                                  class="text-link">Việc làm IT tại Hồ Chí Minh</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/ha-noi-kl01"
+                                  class="text-link">Việc làm IT tại Hà Nội</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/da-nang-kl48"
+                                  class="text-link">Việc làm IT tại Đà Nẵng</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/part-time-kt4621"
+                                  class="text-link">Việc làm IT Part-time</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/fulltime-kt1622"
+                                  class="text-link">Việc làm IT Fulltime</a>
+                          </li>
+                          <li class="list-item">
+                              <a href="https://topdev.vn/viec-lam-it/remote-kt1623"
+                                  class="text-link">Việc làm IT Remote</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>`;
+  $(html).insertAfter('.td-main-content-wrap')
+  document.addEventListener("DOMContentLoaded", () => {
+    if (window.innerWidth < 992) {
+      const boxListLink = document.getElementById("box-list-link");
+      const boxLinks = document.getElementsByClassName("box-link");
+
+      const handleClose = () => {
+        const listOpening = boxListLink.querySelector(".list-link.active");
+        const iconActive = boxListLink.querySelector(".icon.active");
+        if (listOpening && iconActive) {
+          listOpening.classList.remove("active");
+          listOpening.style.maxHeight = null;
+          iconActive.classList.remove("active");
+        }
+      };
+
+      for (let i = 0; i < boxLinks.length; i++) {
+        const titleElement = boxLinks[i].querySelector(".title");
+        const listLink = boxLinks[i].querySelector(".list-link");
+        const icon = titleElement.querySelector(".icon");
+        titleElement.addEventListener("click", () => {
+          if (listLink.style.maxHeight === "0px" || !listLink.style.maxHeight) {
+            handleClose();
+            icon.classList.add("active");
+            listLink.classList.add("active");
+            listLink.style.maxHeight = listLink.scrollHeight + "px";
+          } else {
+            icon.classList.remove("active");
+            listLink.classList.remove("active");
+            listLink.style.maxHeight = null;
+          }
+        });
+      }
+    }
+  });
+</script>
+<style>
+  #box-list-link {
+    padding: 2rem 0px;
+  }
+
+  #box-list-link .grid {
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  @media (max-width: 992px) {
+    #box-list-link .grid {
+      display: block;
+    }
+  }
+
+  #box-list-link .grid .grid-item {
+    position: relative;
+    padding: 0 15px;
+  }
+
+  @media (max-width: 992px) {
+    #box-list-link .grid .grid-item:not(:last-child)::after {
+      content: "";
+      background-color: #c3c3c3;
+      width: 90%;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  #box-list-link .title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 0.25rem;
+    position: relative;
+    margin: 0;
+  }
+
+  #box-list-link .title .icon {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    #box-list-link .title {
+      padding: 15px;
+      cursor: pointer;
+      user-select: none;
+      color: #d34126;
+      border-bottom: #c3c3c3 solid 1px;
+    }
+
+    #box-list-link .title .icon {
+      display: block;
+      position: absolute;
+      top: 40%;
+      right: 20px;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-top: 3px solid #979797;
+      transition: all 0.3s ease-out;
+      border-left: 3px solid #979797;
+      transform: rotate(-135deg);
+      display: block;
+    }
+
+    #box-list-link .title .icon.active {
+      transform: rotate(-315deg);
+    }
+  }
+
+  #box-list-link .box-link {
+    padding: 0px 20px 20px 20px;
+    background-color: #faece9;
+    position: relative;
+  }
+
+  @media (max-width: 992px) {
+    #box-list-link .box-link {
+      padding: 0;
+      border: solid #c3c3c3 1px;
+    }
+  }
+
+  #box-list-link .list-link {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 170px;
+    transition: all 0.3s ease-out;
+    transform-origin: top center;
+    overflow-y: auto;
+  }
+
+  #box-list-link .list-link::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  #box-list-link .list-link::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #fff;
+    border-radius: 10px;
+  }
+
+  #box-list-link .list-link::-webkit-scrollbar-thumb {
+    background: #979797;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 992px) {
+    #box-list-link .list-link {
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    #box-list-link .list-link .list-item:not(:last-child) .text-link {
+      border-bottom: solid 1px #c3c3c3;
+    }
+  }
+
+  #box-list-link .list-link .list-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  #box-list-link .list-link .text-link {
+    color: #000;
+    font-size: 14px;
+    display: block;
+    padding: 0.5rem 0.25rem;
+    text-decoration: none;
+  }
+
+  #box-list-link .list-link .text-link:hover {
+    color: #d34126;
+  }
+
+  @media (max-width: 992px) {
+    #box-list-link .list-link .text-link {
+      padding: 15px 20px;
+      background-color: #fff;
+    }
+  }
+</style></div>        <!--[if lte IE 9]>
+        <script>
+            (function($) {
+                $(document).ready(function() {
+                    $('#ftwp-container').addClass('ftwp-ie9');
+                });
+            })(jQuery);
+        </script>
+        <![endif]-->
+		<script type='text/javascript'>
+/* <![CDATA[ */
+var codePrettifyLoaderBaseUrl = "https:\/\/topdev.vn\/blog\/wp-content\/plugins\/code-prettify\/prettify";
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-content/plugins/code-prettify/prettify/run_prettify.js?ver=1.4.0'></script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.6.3'></script>
+<script type='text/javascript'>
+lazySizes.cfg.nativeLoading={setLoadingAttribute:true,disableListeners:{scroll:true}};lazySizes.init();
+</script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-content/plugins/td-cloud-library/assets/js/js_posts_autoload.min.js?ver=b609d31b17f396913344a17574b6a2f5'></script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-content/plugins/td-composer/legacy/Newspaper/js/tagdiv_theme.min.js?ver=10.3.5'></script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-includes/js/comment-reply.min.js?ver=5.4.6'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fixedtocOption = {"showAdminbar":"","inOutEffect":"fade","isNestedList":"1","isColExpList":"1","showColExpIcon":"1","isAccordionList":"","isQuickMin":"1","isEscMin":"1","isEnterMax":"1","fixedMenu":"","scrollOffset":"10","fixedOffsetX":"8","fixedOffsetY":"0","fixedPosition":"middle-left","contentsFixedHeight":"","inPost":"1","contentsFloatInPost":"none","contentsWidthInPost":"0","contentsHeightInPost":"","contentsColexpInitMobile":"1","inWidget":"","fixedWidget":"","triggerBorder":"thin","contentsBorder":"thin","triggerSize":"40","isClickableHeader":"","debug":"0","contentsColexpInit":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-content/plugins/fixed-toc/frontend/assets/js/ftoc.min.js?ver=3.1.18'></script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-content/plugins/td-cloud-library/assets/js/js_files_for_front.min.js?ver=b609d31b17f396913344a17574b6a2f5'></script>
+<script type='text/javascript' src='https://topdev.vn/blog/wp-includes/js/wp-embed.min.js?ver=5.4.6'></script>
+
+<!-- JS generated by theme -->
+
+<script>
+    
+
+                jQuery().ready(function jQuery_ready() {
+                    tdAjaxCount.tdGetViewsCountsAjax("post","[40287]");
+                });
+            
+</script>
+
+
+<!-- Header style compiled by theme -->
+
+<style>
+    
+.td-header-wrap .black-menu .sf-menu > .current-menu-item > a,
+    .td-header-wrap .black-menu .sf-menu > .current-menu-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > .current-category-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > li > a:hover,
+    .td-header-wrap .black-menu .sf-menu > .sfHover > a,
+    .sf-menu > .current-menu-item > a:after,
+    .sf-menu > .current-menu-ancestor > a:after,
+    .sf-menu > .current-category-ancestor > a:after,
+    .sf-menu > li:hover > a:after,
+    .sf-menu > .sfHover > a:after,
+    .header-search-wrap .td-drop-down-search:after,
+    .header-search-wrap .td-drop-down-search .btn:hover,
+    input[type=submit]:hover,
+    .td-read-more a,
+    .td-post-category:hover,
+    .td_top_authors .td-active .td-author-post-count,
+    .td_top_authors .td-active .td-author-comments-count,
+    .td_top_authors .td_mod_wrap:hover .td-author-post-count,
+    .td_top_authors .td_mod_wrap:hover .td-author-comments-count,
+    .td-404-sub-sub-title a:hover,
+    .td-search-form-widget .wpb_button:hover,
+    .td-rating-bar-wrap div,
+    .dropcap,
+    .td_wrapper_video_playlist .td_video_controls_playlist_wrapper,
+    .wpb_default,
+    .wpb_default:hover,
+    .td-left-smart-list:hover,
+    .td-right-smart-list:hover,
+    #bbpress-forums button:hover,
+    .bbp_widget_login .button:hover,
+    .td-footer-wrapper .td-post-category,
+    .td-footer-wrapper .widget_product_search input[type="submit"]:hover,
+    .single-product .product .summary .cart .button:hover,
+    .td-next-prev-wrap a:hover,
+    .td-load-more-wrap a:hover,
+    .td-post-small-box a:hover,
+    .page-nav .current,
+    .page-nav:first-child > div,
+    #bbpress-forums .bbp-pagination .current,
+    #bbpress-forums #bbp-single-user-details #bbp-user-navigation li.current a,
+    .td-theme-slider:hover .slide-meta-cat a,
+    a.vc_btn-black:hover,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .td-scroll-up,
+    .td-smart-list-button:hover,
+    .td-weather-information:before,
+    .td-weather-week:before,
+    .td_block_exchange .td-exchange-header:before,
+    .td-pulldown-syle-2 .td-subcat-dropdown ul:after,
+    .td_block_template_9 .td-block-title:after,
+    .td_block_template_15 .td-block-title:before,
+    div.wpforms-container .wpforms-form div.wpforms-submit-container button[type=submit],
+    .td-close-video-fixed {
+        background-color: #e24a32;
+    }
+
+    .td_block_template_4 .td-related-title .td-cur-simple-item:before {
+        border-color: #e24a32 transparent transparent transparent !important;
+    }
+    
+    
+    .td_block_template_4 .td-related-title .td-cur-simple-item,
+    .td_block_template_3 .td-related-title .td-cur-simple-item,
+    .td_block_template_9 .td-related-title:after {
+        background-color: #e24a32;
+    }
+
+    a,
+    cite a:hover,
+    .td-page-content blockquote p,
+    .td-post-content blockquote p,
+    .mce-content-body blockquote p,
+    .comment-content blockquote p,
+    .wpb_text_column blockquote p,
+    .td_block_text_with_title blockquote p,
+    .td_module_wrap:hover .entry-title a,
+    .td-subcat-filter .td-subcat-list a:hover,
+    .td-subcat-filter .td-subcat-dropdown a:hover,
+    .td_quote_on_blocks,
+    .dropcap2,
+    .dropcap3,
+    .td_top_authors .td-active .td-authors-name a,
+    .td_top_authors .td_mod_wrap:hover .td-authors-name a,
+    .td-post-next-prev-content a:hover,
+    .author-box-wrap .td-author-social a:hover,
+    .td-author-name a:hover,
+    .td-author-url a:hover,
+    .comment-reply-link:hover,
+    .logged-in-as a:hover,
+    #cancel-comment-reply-link:hover,
+    .td-search-query,
+    .widget a:hover,
+    .td_wp_recentcomments a:hover,
+    .archive .widget_archive .current,
+    .archive .widget_archive .current a,
+    .widget_calendar tfoot a:hover,
+    #bbpress-forums li.bbp-header .bbp-reply-content span a:hover,
+    #bbpress-forums .bbp-forum-freshness a:hover,
+    #bbpress-forums .bbp-topic-freshness a:hover,
+    #bbpress-forums .bbp-forums-list li a:hover,
+    #bbpress-forums .bbp-forum-title:hover,
+    #bbpress-forums .bbp-topic-permalink:hover,
+    #bbpress-forums .bbp-topic-started-by a:hover,
+    #bbpress-forums .bbp-topic-started-in a:hover,
+    #bbpress-forums .bbp-body .super-sticky li.bbp-topic-title .bbp-topic-permalink,
+    #bbpress-forums .bbp-body .sticky li.bbp-topic-title .bbp-topic-permalink,
+    .widget_display_replies .bbp-author-name,
+    .widget_display_topics .bbp-author-name,
+    .td-subfooter-menu li a:hover,
+    a.vc_btn-black:hover,
+    .td-smart-list-dropdown-wrap .td-smart-list-button:hover,
+    .td-instagram-user a,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover i,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-link:hover,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-item .td-cur-simple-item,
+    .td_block_template_2 .td-related-title .td-cur-simple-item,
+    .td_block_template_5 .td-related-title .td-cur-simple-item,
+    .td_block_template_6 .td-related-title .td-cur-simple-item,
+    .td_block_template_7 .td-related-title .td-cur-simple-item,
+    .td_block_template_8 .td-related-title .td-cur-simple-item,
+    .td_block_template_9 .td-related-title .td-cur-simple-item,
+    .td_block_template_10 .td-related-title .td-cur-simple-item,
+    .td_block_template_11 .td-related-title .td-cur-simple-item,
+    .td_block_template_12 .td-related-title .td-cur-simple-item,
+    .td_block_template_13 .td-related-title .td-cur-simple-item,
+    .td_block_template_14 .td-related-title .td-cur-simple-item,
+    .td_block_template_15 .td-related-title .td-cur-simple-item,
+    .td_block_template_16 .td-related-title .td-cur-simple-item,
+    .td_block_template_17 .td-related-title .td-cur-simple-item,
+    .td-theme-wrap .sf-menu ul .td-menu-item > a:hover,
+    .td-theme-wrap .sf-menu ul .sfHover > a,
+    .td-theme-wrap .sf-menu ul .current-menu-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-category-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-menu-item > a,
+    .td_outlined_btn,
+     .td_block_categories_tags .td-ct-item:hover {
+        color: #e24a32;
+    }
+
+    a.vc_btn-black.vc_btn_square_outlined:hover,
+    a.vc_btn-black.vc_btn_outlined:hover {
+        color: #e24a32 !important;
+    }
+
+    .td-next-prev-wrap a:hover,
+    .td-load-more-wrap a:hover,
+    .td-post-small-box a:hover,
+    .page-nav .current,
+    .page-nav:first-child > div,
+    #bbpress-forums .bbp-pagination .current,
+    .post .td_quote_box,
+    .page .td_quote_box,
+    a.vc_btn-black:hover,
+    .td_block_template_5 .td-block-title > *,
+    .td_outlined_btn {
+        border-color: #e24a32;
+    }
+
+    .td_wrapper_video_playlist .td_video_currently_playing:after {
+        border-color: #e24a32 !important;
+    }
+
+    .header-search-wrap .td-drop-down-search:before {
+        border-color: transparent transparent #e24a32 transparent;
+    }
+
+    .block-title > span,
+    .block-title > a,
+    .block-title > label,
+    .widgettitle,
+    .widgettitle:after,
+    .td-trending-now-title,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td_block_template_1 .td-related-title .td-cur-simple-item,
+    .td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more, 
+    .td_3D_btn,
+    .td_shadow_btn,
+    .td_default_btn,
+    .td_round_btn, 
+    .td_outlined_btn:hover {
+    	background-color: #e24a32;
+    }
+    .block-title,
+    .td_block_template_1 .td-related-title,
+    .wpb_tabs .wpb_tabs_nav,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container {
+        border-color: #e24a32;
+    }
+    .td_block_wrap .td-subcat-item a.td-cur-simple-item {
+	    color: #e24a32;
+	}
+
+
+    
+    .td-grid-style-4 .entry-title
+    {
+        background-color: rgba(226, 74, 50, 0.7);
+    }
+
+
+    
+    .block-title > span,
+    .block-title > span > a,
+    .block-title > a,
+    .block-title > label,
+    .widgettitle,
+    .widgettitle:after,
+    .td-trending-now-title,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td_block_template_1 .td-related-title .td-cur-simple-item,
+    .td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more,
+    .td-weather-information:before,
+    .td-weather-week:before,
+    .td_block_exchange .td-exchange-header:before,
+    .td-theme-wrap .td_block_template_3 .td-block-title > *,
+    .td-theme-wrap .td_block_template_4 .td-block-title > *,
+    .td-theme-wrap .td_block_template_7 .td-block-title > *,
+    .td-theme-wrap .td_block_template_9 .td-block-title:after,
+    .td-theme-wrap .td_block_template_10 .td-block-title::before,
+    .td-theme-wrap .td_block_template_11 .td-block-title::before,
+    .td-theme-wrap .td_block_template_11 .td-block-title::after,
+    .td-theme-wrap .td_block_template_14 .td-block-title,
+    .td-theme-wrap .td_block_template_15 .td-block-title:before,
+    .td-theme-wrap .td_block_template_17 .td-block-title:before {
+        background-color: #222222;
+    }
+
+    .block-title,
+    .td_block_template_1 .td-related-title,
+    .wpb_tabs .wpb_tabs_nav,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container,
+    .td-theme-wrap .td_block_template_5 .td-block-title > *,
+    .td-theme-wrap .td_block_template_17 .td-block-title,
+    .td-theme-wrap .td_block_template_17 .td-block-title::before {
+        border-color: #222222;
+    }
+
+    .td-theme-wrap .td_block_template_4 .td-block-title > *:before,
+    .td-theme-wrap .td_block_template_17 .td-block-title::after {
+        border-color: #222222 transparent transparent transparent;
+    }
+    
+    .td-theme-wrap .td_block_template_4 .td-related-title .td-cur-simple-item:before {
+        border-color: #222222 transparent transparent transparent !important;
+    }
+
+    
+    .td-theme-wrap .block-title > span,
+    .td-theme-wrap .block-title > span > a,
+    .td-theme-wrap .widget_rss .block-title .rsswidget,
+    .td-theme-wrap .block-title > a,
+    .widgettitle,
+    .widgettitle > a,
+    .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td-related-title .td-cur-simple-item,
+    .td-theme-wrap .td_block_template_2 .td-block-title > *,
+    .td-theme-wrap .td_block_template_3 .td-block-title > *,
+    .td-theme-wrap .td_block_template_4 .td-block-title > *,
+    .td-theme-wrap .td_block_template_5 .td-block-title > *,
+    .td-theme-wrap .td_block_template_6 .td-block-title > *,
+    .td-theme-wrap .td_block_template_6 .td-block-title:before,
+    .td-theme-wrap .td_block_template_7 .td-block-title > *,
+    .td-theme-wrap .td_block_template_8 .td-block-title > *,
+    .td-theme-wrap .td_block_template_9 .td-block-title > *,
+    .td-theme-wrap .td_block_template_10 .td-block-title > *,
+    .td-theme-wrap .td_block_template_11 .td-block-title > *,
+    .td-theme-wrap .td_block_template_12 .td-block-title > *,
+    .td-theme-wrap .td_block_template_13 .td-block-title > span,
+    .td-theme-wrap .td_block_template_13 .td-block-title > a,
+    .td-theme-wrap .td_block_template_14 .td-block-title > *,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option i,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover i,
+    .td-theme-wrap .td_block_template_15 .td-block-title > *,
+    .td-theme-wrap .td_block_template_15 .td-block-title-wrap .td-wrapper-pulldown-filter,
+    .td-theme-wrap .td_block_template_15 .td-block-title-wrap .td-wrapper-pulldown-filter i,
+    .td-theme-wrap .td_block_template_16 .td-block-title > *,
+    .td-theme-wrap .td_block_template_17 .td-block-title > * {
+    	color: #ffffff;
+    }.td-header-style-12 .td-header-menu-wrap-full,
+    .td-header-style-12 .td-affix,
+    .td-grid-style-1.td-hover-1 .td-big-grid-post:hover .td-post-category,
+    .td-grid-style-5.td-hover-1 .td-big-grid-post:hover .td-post-category,
+    .td_category_template_3 .td-current-sub-category,
+    .td_category_template_8 .td-category-header .td-category a.td-current-sub-category,
+    .td_category_template_4 .td-category-siblings .td-category a:hover,
+     .td_block_big_grid_9.td-grid-style-1 .td-post-category,
+    .td_block_big_grid_9.td-grid-style-5 .td-post-category,
+    .td-grid-style-6.td-hover-1 .td-module-thumb:after,
+     .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-menu-item > a,
+    .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-menu-ancestor > a,
+    .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-category-ancestor > a,
+    .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > li > a:hover,
+    .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .sfHover > a {
+        background-color: #e24a32;
+    }
+    
+    .td_mega_menu_sub_cats .cur-sub-cat,
+    .td-mega-span h3 a:hover,
+    .td_mod_mega_menu:hover .entry-title a,
+    .header-search-wrap .result-msg a:hover,
+    .td-header-top-menu .td-drop-down-search .td_module_wrap:hover .entry-title a,
+    .td-header-top-menu .td-icon-search:hover,
+    .td-header-wrap .result-msg a:hover,
+    .top-header-menu li a:hover,
+    .top-header-menu .current-menu-item > a,
+    .top-header-menu .current-menu-ancestor > a,
+    .top-header-menu .current-category-ancestor > a,
+    .td-social-icon-wrap > a:hover,
+    .td-header-sp-top-widget .td-social-icon-wrap a:hover,
+    .td_mod_related_posts:hover h3 > a,
+    .td-post-template-11 .td-related-title .td-related-left:hover,
+    .td-post-template-11 .td-related-title .td-related-right:hover,
+    .td-post-template-11 .td-related-title .td-cur-simple-item,
+    .td-post-template-11 .td_block_related_posts .td-next-prev-wrap a:hover,
+    .td-category-header .td-pulldown-category-filter-link:hover,
+    .td-category-siblings .td-subcat-dropdown a:hover,
+    .td-category-siblings .td-subcat-dropdown a.td-current-sub-category,
+    .footer-text-wrap .footer-email-wrap a,
+    .footer-social-wrap a:hover,
+    .td_module_17 .td-read-more a:hover,
+    .td_module_18 .td-read-more a:hover,
+    .td_module_19 .td-post-author-name a:hover,
+    .td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more span,
+    .td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more i,
+    .td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more span,
+    .td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more i,
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-category-ancestor > a,
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-menu-ancestor > a,
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-menu-item > a,
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .sfHover > a,
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > li > a:hover {
+        color: #e24a32;
+    }
+    
+    .td-mega-menu-page .wpb_content_element ul li a:hover,
+    .td-theme-wrap .td-aj-search-results .td_module_wrap:hover .entry-title a,
+    .td-theme-wrap .header-search-wrap .result-msg a:hover {
+        color: #e24a32 !important;
+    }
+    
+    .td_category_template_8 .td-category-header .td-category a.td-current-sub-category,
+    .td_category_template_4 .td-category-siblings .td-category a:hover,
+    .tdm-menu-active-style4 .tdm-header .sf-menu > .current-menu-item > a,
+    .tdm-menu-active-style4 .tdm-header .sf-menu > .current-menu-ancestor > a,
+    .tdm-menu-active-style4 .tdm-header .sf-menu > .current-category-ancestor > a,
+    .tdm-menu-active-style4 .tdm-header .sf-menu > li > a:hover,
+    .tdm-menu-active-style4 .tdm-header .sf-menu > .sfHover > a {
+        border-color: #e24a32;
+    }
+    
+    
+
+
+    
+    .post blockquote p,
+    .page blockquote p {
+    	color: #737f96;
+    }
+    .post .td_quote_box,
+    .page .td_quote_box {
+        border-color: #737f96;
+    }
+.td-header-wrap .black-menu .sf-menu > .current-menu-item > a,
+    .td-header-wrap .black-menu .sf-menu > .current-menu-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > .current-category-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > li > a:hover,
+    .td-header-wrap .black-menu .sf-menu > .sfHover > a,
+    .sf-menu > .current-menu-item > a:after,
+    .sf-menu > .current-menu-ancestor > a:after,
+    .sf-menu > .current-category-ancestor > a:after,
+    .sf-menu > li:hover > a:after,
+    .sf-menu > .sfHover > a:after,
+    .header-search-wrap .td-drop-down-search:after,
+    .header-search-wrap .td-drop-down-search .btn:hover,
+    input[type=submit]:hover,
+    .td-read-more a,
+    .td-post-category:hover,
+    .td_top_authors .td-active .td-author-post-count,
+    .td_top_authors .td-active .td-author-comments-count,
+    .td_top_authors .td_mod_wrap:hover .td-author-post-count,
+    .td_top_authors .td_mod_wrap:hover .td-author-comments-count,
+    .td-404-sub-sub-title a:hover,
+    .td-search-form-widget .wpb_button:hover,
+    .td-rating-bar-wrap div,
+    .dropcap,
+    .td_wrapper_video_playlist .td_video_controls_playlist_wrapper,
+    .wpb_default,
+    .wpb_default:hover,
+    .td-left-smart-list:hover,
+    .td-right-smart-list:hover,
+    #bbpress-forums button:hover,
+    .bbp_widget_login .button:hover,
+    .td-footer-wrapper .td-post-category,
+    .td-footer-wrapper .widget_product_search input[type="submit"]:hover,
+    .single-product .product .summary .cart .button:hover,
+    .td-next-prev-wrap a:hover,
+    .td-load-more-wrap a:hover,
+    .td-post-small-box a:hover,
+    .page-nav .current,
+    .page-nav:first-child > div,
+    #bbpress-forums .bbp-pagination .current,
+    #bbpress-forums #bbp-single-user-details #bbp-user-navigation li.current a,
+    .td-theme-slider:hover .slide-meta-cat a,
+    a.vc_btn-black:hover,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .td-scroll-up,
+    .td-smart-list-button:hover,
+    .td-weather-information:before,
+    .td-weather-week:before,
+    .td_block_exchange .td-exchange-header:before,
+    .td-pulldown-syle-2 .td-subcat-dropdown ul:after,
+    .td_block_template_9 .td-block-title:after,
+    .td_block_template_15 .td-block-title:before,
+    div.wpforms-container .wpforms-form div.wpforms-submit-container button[type=submit],
+    .td-close-video-fixed {
+        background-color: #e24a32;
+    }
+
+    .td_block_template_4 .td-related-title .td-cur-simple-item:before {
+        border-color: #e24a32 transparent transparent transparent !important;
+    }
+    
+    
+    .td_block_template_4 .td-related-title .td-cur-simple-item,
+    .td_block_template_3 .td-related-title .td-cur-simple-item,
+    .td_block_template_9 .td-related-title:after {
+        background-color: #e24a32;
+    }
+
+    a,
+    cite a:hover,
+    .td-page-content blockquote p,
+    .td-post-content blockquote p,
+    .mce-content-body blockquote p,
+    .comment-content blockquote p,
+    .wpb_text_column blockquote p,
+    .td_block_text_with_title blockquote p,
+    .td_module_wrap:hover .entry-title a,
+    .td-subcat-filter .td-subcat-list a:hover,
+    .td-subcat-filter .td-subcat-dropdown a:hover,
+    .td_quote_on_blocks,
+    .dropcap2,
+    .dropcap3,
+    .td_top_authors .td-active .td-authors-name a,
+    .td_top_authors .td_mod_wrap:hover .td-authors-name a,
+    .td-post-next-prev-content a:hover,
+    .author-box-wrap .td-author-social a:hover,
+    .td-author-name a:hover,
+    .td-author-url a:hover,
+    .comment-reply-link:hover,
+    .logged-in-as a:hover,
+    #cancel-comment-reply-link:hover,
+    .td-search-query,
+    .widget a:hover,
+    .td_wp_recentcomments a:hover,
+    .archive .widget_archive .current,
+    .archive .widget_archive .current a,
+    .widget_calendar tfoot a:hover,
+    #bbpress-forums li.bbp-header .bbp-reply-content span a:hover,
+    #bbpress-forums .bbp-forum-freshness a:hover,
+    #bbpress-forums .bbp-topic-freshness a:hover,
+    #bbpress-forums .bbp-forums-list li a:hover,
+    #bbpress-forums .bbp-forum-title:hover,
+    #bbpress-forums .bbp-topic-permalink:hover,
+    #bbpress-forums .bbp-topic-started-by a:hover,
+    #bbpress-forums .bbp-topic-started-in a:hover,
+    #bbpress-forums .bbp-body .super-sticky li.bbp-topic-title .bbp-topic-permalink,
+    #bbpress-forums .bbp-body .sticky li.bbp-topic-title .bbp-topic-permalink,
+    .widget_display_replies .bbp-author-name,
+    .widget_display_topics .bbp-author-name,
+    .td-subfooter-menu li a:hover,
+    a.vc_btn-black:hover,
+    .td-smart-list-dropdown-wrap .td-smart-list-button:hover,
+    .td-instagram-user a,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover i,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-link:hover,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-item .td-cur-simple-item,
+    .td_block_template_2 .td-related-title .td-cur-simple-item,
+    .td_block_template_5 .td-related-title .td-cur-simple-item,
+    .td_block_template_6 .td-related-title .td-cur-simple-item,
+    .td_block_template_7 .td-related-title .td-cur-simple-item,
+    .td_block_template_8 .td-related-title .td-cur-simple-item,
+    .td_block_template_9 .td-related-title .td-cur-simple-item,
+    .td_block_template_10 .td-related-title .td-cur-simple-item,
+    .td_block_template_11 .td-related-title .td-cur-simple-item,
+    .td_block_template_12 .td-related-title .td-cur-simple-item,
+    .td_block_template_13 .td-related-title .td-cur-simple-item,
+    .td_block_template_14 .td-related-title .td-cur-simple-item,
+    .td_block_template_15 .td-related-title .td-cur-simple-item,
+    .td_block_template_16 .td-related-title .td-cur-simple-item,
+    .td_block_template_17 .td-related-title .td-cur-simple-item,
+    .td-theme-wrap .sf-menu ul .td-menu-item > a:hover,
+    .td-theme-wrap .sf-menu ul .sfHover > a,
+    .td-theme-wrap .sf-menu ul .current-menu-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-category-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-menu-item > a,
+    .td_outlined_btn,
+     .td_block_categories_tags .td-ct-item:hover {
+        color: #e24a32;
+    }
+
+    a.vc_btn-black.vc_btn_square_outlined:hover,
+    a.vc_btn-black.vc_btn_outlined:hover {
+        color: #e24a32 !important;
+    }
+
+    .td-next-prev-wrap a:hover,
+    .td-load-more-wrap a:hover,
+    .td-post-small-box a:hover,
+    .page-nav .current,
+    .page-nav:first-child > div,
+    #bbpress-forums .bbp-pagination .current,
+    .post .td_quote_box,
+    .page .td_quote_box,
+    a.vc_btn-black:hover,
+    .td_block_template_5 .td-block-title > *,
+    .td_outlined_btn {
+        border-color: #e24a32;
+    }
+
+    .td_wrapper_video_playlist .td_video_currently_playing:after {
+        border-color: #e24a32 !important;
+    }
+
+    .header-search-wrap .td-drop-down-search:before {
+        border-color: transparent transparent #e24a32 transparent;
+    }
+
+    .block-title > span,
+    .block-title > a,
+    .block-title > label,
+    .widgettitle,
+    .widgettitle:after,
+    .td-trending-now-title,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td_block_template_1 .td-related-title .td-cur-simple-item,
+    .td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more, 
+    .td_3D_btn,
+    .td_shadow_btn,
+    .td_default_btn,
+    .td_round_btn, 
+    .td_outlined_btn:hover {
+    	background-color: #e24a32;
+    }
+    .block-title,
+    .td_block_template_1 .td-related-title,
+    .wpb_tabs .wpb_tabs_nav,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container {
+        border-color: #e24a32;
+    }
+    .td_block_wrap .td-subcat-item a.td-cur-simple-item {
+	    color: #e24a32;
+	}
+
+
+    
+    .td-grid-style-4 .entry-title
+    {
+        background-color: rgba(226, 74, 50, 0.7);
+    }
+
+
+    
+    .block-title > span,
+    .block-title > span > a,
+    .block-title > a,
+    .block-title > label,
+    .widgettitle,
+    .widgettitle:after,
+    .td-trending-now-title,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td_block_template_1 .td-related-title .td-cur-simple-item,
+    .td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more,
+    .td-weather-information:before,
+    .td-weather-week:before,
+    .td_block_exchange .td-exchange-header:before,
+    .td-theme-wrap .td_block_template_3 .td-block-title > *,
+    .td-theme-wrap .td_block_template_4 .td-block-title > *,
+    .td-theme-wrap .td_block_template_7 .td-block-title > *,
+    .td-theme-wrap .td_block_template_9 .td-block-title:after,
+    .td-theme-wrap .td_block_template_10 .td-block-title::before,
+    .td-theme-wrap .td_block_template_11 .td-block-title::before,
+    .td-theme-wrap .td_block_template_11 .td-block-title::after,
+    .td-theme-wrap .td_block_template_14 .td-block-title,
+    .td-theme-wrap .td_block_template_15 .td-block-title:before,
+    .td-theme-wrap .td_block_template_17 .td-block-title:before {
+        background-color: #222222;
+    }
+
+    .block-title,
+    .td_block_template_1 .td-related-title,
+    .wpb_tabs .wpb_tabs_nav,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container,
+    .td-theme-wrap .td_block_template_5 .td-block-title > *,
+    .td-theme-wrap .td_block_template_17 .td-block-title,
+    .td-theme-wrap .td_block_template_17 .td-block-title::before {
+        border-color: #222222;
+    }
+
+    .td-theme-wrap .td_block_template_4 .td-block-title > *:before,
+    .td-theme-wrap .td_block_template_17 .td-block-title::after {
+        border-color: #222222 transparent transparent transparent;
+    }
+    
+    .td-theme-wrap .td_block_template_4 .td-related-title .td-cur-simple-item:before {
+        border-color: #222222 transparent transparent transparent !important;
+    }
+
+    
+    .td-theme-wrap .block-title > span,
+    .td-theme-wrap .block-title > span > a,
+    .td-theme-wrap .widget_rss .block-title .rsswidget,
+    .td-theme-wrap .block-title > a,
+    .widgettitle,
+    .widgettitle > a,
+    .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td-related-title .td-cur-simple-item,
+    .td-theme-wrap .td_block_template_2 .td-block-title > *,
+    .td-theme-wrap .td_block_template_3 .td-block-title > *,
+    .td-theme-wrap .td_block_template_4 .td-block-title > *,
+    .td-theme-wrap .td_block_template_5 .td-block-title > *,
+    .td-theme-wrap .td_block_template_6 .td-block-title > *,
+    .td-theme-wrap .td_block_template_6 .td-block-title:before,
+    .td-theme-wrap .td_block_template_7 .td-block-title > *,
+    .td-theme-wrap .td_block_template_8 .td-block-title > *,
+    .td-theme-wrap .td_block_template_9 .td-block-title > *,
+    .td-theme-wrap .td_block_template_10 .td-block-title > *,
+    .td-theme-wrap .td_block_template_11 .td-block-title > *,
+    .td-theme-wrap .td_block_template_12 .td-block-title > *,
+    .td-theme-wrap .td_block_template_13 .td-block-title > span,
+    .td-theme-wrap .td_block_template_13 .td-block-title > a,
+    .td-theme-wrap .td_block_template_14 .td-block-title > *,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option i,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover,
+    .td-theme-wrap .td_block_template_14 .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover i,
+    .td-theme-wrap .td_block_template_15 .td-block-title > *,
+    .td-theme-wrap .td_block_template_15 .td-block-title-wrap .td-wrapper-pulldown-filter,
+    .td-theme-wrap .td_block_template_15 .td-block-title-wrap .td-wrapper-pulldown-filter i,
+    .td-theme-wrap .td_block_template_16 .td-block-title > *,
+    .td-theme-wrap .td_block_template_17 .td-block-title > * {
+    	color: #ffffff;
+    }.td-header-style-12 .td-header-menu-wrap-full,
+    .td-header-style-12 .td-affix,
+    .td-grid-style-1.td-hover-1 .td-big-grid-post:hover .td-post-category,
+    .td-grid-style-5.td-hover-1 .td-big-grid-post:hover .td-post-category,
+    .td_category_template_3 .td-current-sub-category,
+    .td_category_template_8 .td-category-header .td-category a.td-current-sub-category,
+    .td_category_template_4 .td-category-siblings .td-category a:hover,
+     .td_block_big_grid_9.td-grid-style-1 .td-post-category,
+    .td_block_big_grid_9.td-grid-style-5 .td-post-category,
+    .td-grid-style-6.td-hover-1 .td-module-thumb:after,
+     .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-menu-item > a,
+    .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-menu-ancestor > a,
+    .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-category-ancestor > a,
+    .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > li > a:hover,
+    .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .sfHover > a {
+        background-color: #e24a32;
+    }
+    
+    .td_mega_menu_sub_cats .cur-sub-cat,
+    .td-mega-span h3 a:hover,
+    .td_mod_mega_menu:hover .entry-title a,
+    .header-search-wrap .result-msg a:hover,
+    .td-header-top-menu .td-drop-down-search .td_module_wrap:hover .entry-title a,
+    .td-header-top-menu .td-icon-search:hover,
+    .td-header-wrap .result-msg a:hover,
+    .top-header-menu li a:hover,
+    .top-header-menu .current-menu-item > a,
+    .top-header-menu .current-menu-ancestor > a,
+    .top-header-menu .current-category-ancestor > a,
+    .td-social-icon-wrap > a:hover,
+    .td-header-sp-top-widget .td-social-icon-wrap a:hover,
+    .td_mod_related_posts:hover h3 > a,
+    .td-post-template-11 .td-related-title .td-related-left:hover,
+    .td-post-template-11 .td-related-title .td-related-right:hover,
+    .td-post-template-11 .td-related-title .td-cur-simple-item,
+    .td-post-template-11 .td_block_related_posts .td-next-prev-wrap a:hover,
+    .td-category-header .td-pulldown-category-filter-link:hover,
+    .td-category-siblings .td-subcat-dropdown a:hover,
+    .td-category-siblings .td-subcat-dropdown a.td-current-sub-category,
+    .footer-text-wrap .footer-email-wrap a,
+    .footer-social-wrap a:hover,
+    .td_module_17 .td-read-more a:hover,
+    .td_module_18 .td-read-more a:hover,
+    .td_module_19 .td-post-author-name a:hover,
+    .td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more span,
+    .td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more i,
+    .td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more span,
+    .td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more i,
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-category-ancestor > a,
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-menu-ancestor > a,
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-menu-item > a,
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .sfHover > a,
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > li > a:hover {
+        color: #e24a32;
+    }
+    
+    .td-mega-menu-page .wpb_content_element ul li a:hover,
+    .td-theme-wrap .td-aj-search-results .td_module_wrap:hover .entry-title a,
+    .td-theme-wrap .header-search-wrap .result-msg a:hover {
+        color: #e24a32 !important;
+    }
+    
+    .td_category_template_8 .td-category-header .td-category a.td-current-sub-category,
+    .td_category_template_4 .td-category-siblings .td-category a:hover,
+    .tdm-menu-active-style4 .tdm-header .sf-menu > .current-menu-item > a,
+    .tdm-menu-active-style4 .tdm-header .sf-menu > .current-menu-ancestor > a,
+    .tdm-menu-active-style4 .tdm-header .sf-menu > .current-category-ancestor > a,
+    .tdm-menu-active-style4 .tdm-header .sf-menu > li > a:hover,
+    .tdm-menu-active-style4 .tdm-header .sf-menu > .sfHover > a {
+        border-color: #e24a32;
+    }
+    
+    
+
+
+    
+    .post blockquote p,
+    .page blockquote p {
+    	color: #737f96;
+    }
+    .post .td_quote_box,
+    .page .td_quote_box {
+        border-color: #737f96;
+    }
+</style>
+
+
+</body>
+</html>
