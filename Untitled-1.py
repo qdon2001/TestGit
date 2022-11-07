@@ -1,5 +1,5 @@
 from sketchpy import library as lib
- 
-ironman = lib.rdj()
+
+ironman = lib.gojo()
 
 ironman.draw()
