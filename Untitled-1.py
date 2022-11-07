@@ -1,4 +1,6 @@
-import math 
+from sketchpy import library as lib
 
-a = abs(-3.4)
-print (a)
+
+ironman = lib.rdj()
+
+ironman.draw()
